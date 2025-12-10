@@ -1,0 +1,2031 @@
+Processing dataset: train-train.csv
+2 Label, SrcAddr
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05670 seconds
+Random Forest Depths curr -> Avg: 2.00, Max: 2, Min: 2
+Testing Time: 0.00197 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05376 seconds
+Random Forest Depths (Stage 2) -> Avg: 2.09, Max: 3, Min: 1
+Testing Time: 0.00195 seconds
+Accuracy: 0.6471
+Precision: 0.6787
+Recall: 0.6471
+F1 Score: 0.6203
+F2 Score: 0.6283
+
+              precision    recall  f1-score   support
+
+           0     0.6154    0.8889    0.7273         9
+           1     0.7500    0.3750    0.5000         8
+
+    accuracy                         0.6471        17
+   macro avg     0.6827    0.6319    0.6136        17
+weighted avg     0.6787    0.6471    0.6203        17
+
+Confusion Matrix:
+[[8 1]
+ [5 3]]
+
+Combined Classification Report:
+Accuracy: 0.7500
+Precision: 0.7885
+Recall: 0.7500
+F1 Score: 0.7317
+F2 Score: 0.7343
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.6154    1.0000    0.7619         8
+           2     0.7500    0.3750    0.5000         8
+
+    accuracy                         0.7500        24
+   macro avg     0.7885    0.7500    0.7317        24
+weighted avg     0.7885    0.7500    0.7317        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 5 3]]
+
+Processing dataset: train-train.csv
+3 Label, SrcAddr, Sport
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05435 seconds
+Random Forest Depths curr -> Avg: 3.20, Max: 7, Min: 2
+Testing Time: 0.00201 seconds
+Accuracy: 0.9167
+Precision: 0.9259
+Recall: 0.9167
+F1 Score: 0.9132
+F2 Score: 0.9136
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.8889    1.0000    0.9412        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9444    0.8750    0.8992        24
+weighted avg     0.9259    0.9167    0.9132        24
+
+Confusion Matrix:
+[[ 6  2]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05679 seconds
+Random Forest Depths (Stage 2) -> Avg: 7.87, Max: 11, Min: 4
+Testing Time: 0.00220 seconds
+Accuracy: 0.7778
+Precision: 0.7972
+Recall: 0.7778
+F1 Score: 0.7778
+F2 Score: 0.7755
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.7000    0.7778        10
+           1     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7778        18
+   macro avg     0.7875    0.7875    0.7778        18
+weighted avg     0.7972    0.7778    0.7778        18
+
+Confusion Matrix:
+[[7 3]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7500
+Precision: 0.7750
+Recall: 0.7500
+F1 Score: 0.7533
+F2 Score: 0.7493
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7500        24
+   macro avg     0.7750    0.7500    0.7533        24
+weighted avg     0.7750    0.7500    0.7533        24
+
+Confusion Matrix:
+[[6 2 0]
+ [0 5 3]
+ [0 1 7]]
+
+Processing dataset: train-train.csv
+4 Label, Dport, SrcAddr, Sport
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05341 seconds
+Random Forest Depths curr -> Avg: 4.15, Max: 8, Min: 2
+Testing Time: 0.00209 seconds
+Accuracy: 0.9167
+Precision: 0.9259
+Recall: 0.9167
+F1 Score: 0.9132
+F2 Score: 0.9136
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.8889    1.0000    0.9412        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9444    0.8750    0.8992        24
+weighted avg     0.9259    0.9167    0.9132        24
+
+Confusion Matrix:
+[[ 6  2]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05573 seconds
+Random Forest Depths (Stage 2) -> Avg: 7.17, Max: 11, Min: 4
+Testing Time: 0.00217 seconds
+Accuracy: 0.8333
+Precision: 0.8788
+Recall: 0.8333
+F1 Score: 0.8318
+F2 Score: 0.8271
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7000    0.8235        10
+           1     0.7273    1.0000    0.8421         8
+
+    accuracy                         0.8333        18
+   macro avg     0.8636    0.8500    0.8328        18
+weighted avg     0.8788    0.8333    0.8318        18
+
+Confusion Matrix:
+[[7 3]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.7917
+Precision: 0.8139
+Recall: 0.7917
+F1 Score: 0.7886
+F2 Score: 0.7869
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.7143    0.6250    0.6667         8
+           2     0.7273    1.0000    0.8421         8
+
+    accuracy                         0.7917        24
+   macro avg     0.8139    0.7917    0.7886        24
+weighted avg     0.8139    0.7917    0.7886        24
+
+Confusion Matrix:
+[[6 2 0]
+ [0 5 3]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+5 Label, DstAddr, Dport, SrcAddr, Sport
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05265 seconds
+Random Forest Depths curr -> Avg: 3.19, Max: 6, Min: 2
+Testing Time: 0.00177 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05591 seconds
+Random Forest Depths (Stage 2) -> Avg: 6.31, Max: 11, Min: 4
+Testing Time: 0.00199 seconds
+Accuracy: 0.8824
+Precision: 0.9059
+Recall: 0.8824
+F1 Score: 0.8815
+F2 Score: 0.8791
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7778    0.8750         9
+           1     0.8000    1.0000    0.8889         8
+
+    accuracy                         0.8824        17
+   macro avg     0.9000    0.8889    0.8819        17
+weighted avg     0.9059    0.8824    0.8815        17
+
+Confusion Matrix:
+[[7 2]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.8750
+Precision: 0.8857
+Recall: 0.8750
+F1 Score: 0.8741
+F2 Score: 0.8730
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8571    0.7500    0.8000         8
+           2     0.8000    1.0000    0.8889         8
+
+    accuracy                         0.8750        24
+   macro avg     0.8857    0.8750    0.8741        24
+weighted avg     0.8857    0.8750    0.8741        24
+
+Confusion Matrix:
+[[7 1 0]
+ [0 6 2]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+6 SrcBytes, Label, DstAddr, Dport, SrcAddr, Sport
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05679 seconds
+Random Forest Depths curr -> Avg: 3.42, Max: 6, Min: 2
+Testing Time: 0.00191 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05427 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.41, Max: 9, Min: 3
+Testing Time: 0.00209 seconds
+Accuracy: 0.8235
+Precision: 0.8292
+Recall: 0.8235
+F1 Score: 0.8235
+F2 Score: 0.8228
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.7778    0.8235         9
+           1     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.8235        17
+   macro avg     0.8264    0.8264    0.8235        17
+weighted avg     0.8292    0.8235    0.8235        17
+
+Confusion Matrix:
+[[7 2]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.8750
+Precision: 0.8843
+Recall: 0.8750
+F1 Score: 0.8773
+F2 Score: 0.8754
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8750    0.8750    0.8750         8
+           2     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.8750        24
+   macro avg     0.8843    0.8750    0.8773        24
+weighted avg     0.8843    0.8750    0.8773        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 7 1]
+ [0 1 7]]
+
+Processing dataset: train-train.csv
+7 SrcBytes, Label, DstAddr, Dport, SrcAddr, Sport, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05433 seconds
+Random Forest Depths curr -> Avg: 3.59, Max: 6, Min: 2
+Testing Time: 0.00195 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05238 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.09, Max: 9, Min: 3
+Testing Time: 0.00225 seconds
+Accuracy: 0.9412
+Precision: 0.9471
+Recall: 0.9412
+F1 Score: 0.9408
+F2 Score: 0.9402
+
+              precision    recall  f1-score   support
+
+           0     0.9000    1.0000    0.9474         9
+           1     1.0000    0.8750    0.9333         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9500    0.9375    0.9404        17
+weighted avg     0.9471    0.9412    0.9408        17
+
+Confusion Matrix:
+[[9 0]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9333
+Recall: 0.9167
+F1 Score: 0.9185
+F2 Score: 0.9158
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8000    1.0000    0.8889         8
+           2     1.0000    0.8750    0.9333         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9333    0.9167    0.9185        24
+weighted avg     0.9333    0.9167    0.9185        24
+
+Confusion Matrix:
+[[7 1 0]
+ [0 8 0]
+ [0 1 7]]
+
+Processing dataset: train-train.csv
+8 SrcBytes, Label, DstAddr, Dport, SrcAddr, State, Sport, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05482 seconds
+Random Forest Depths curr -> Avg: 3.57, Max: 6, Min: 2
+Testing Time: 0.00189 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05674 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.17, Max: 8, Min: 3
+Testing Time: 0.00224 seconds
+Accuracy: 0.8824
+Precision: 0.8824
+Recall: 0.8824
+F1 Score: 0.8824
+F2 Score: 0.8824
+
+              precision    recall  f1-score   support
+
+           0     0.8889    0.8889    0.8889         9
+           1     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.8824        17
+   macro avg     0.8819    0.8819    0.8819        17
+weighted avg     0.8824    0.8824    0.8824        17
+
+Confusion Matrix:
+[[8 1]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+           2     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 1 7]]
+
+Processing dataset: train-train.csv
+9 SrcBytes, Label, DstAddr, Dport, SrcAddr, State, Dur, Sport, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05719 seconds
+Random Forest Depths curr -> Avg: 3.89, Max: 6, Min: 2
+Testing Time: 0.00210 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.06239 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.87, Max: 8, Min: 3
+Testing Time: 0.00210 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+10 SrcBytes, Label, DstAddr, Dport, SrcAddr, State, Dur, Sport, tcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05556 seconds
+Random Forest Depths curr -> Avg: 3.38, Max: 5, Min: 2
+Testing Time: 0.00208 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05528 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.58, Max: 8, Min: 3
+Testing Time: 0.00208 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+11 SrcBytes, Label, DstAddr, Dport, TotPkts, SrcAddr, State, Dur, Sport, tcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05655 seconds
+Random Forest Depths curr -> Avg: 3.50, Max: 6, Min: 2
+Testing Time: 0.00207 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05550 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.51, Max: 8, Min: 3
+Testing Time: 0.00217 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+12 SrcBytes, Label, DstAddr, Dport, TotPkts, Dir, SrcAddr, State, Dur, Sport, tcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05274 seconds
+Random Forest Depths curr -> Avg: 3.60, Max: 6, Min: 2
+Testing Time: 0.00191 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05443 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.59, Max: 9, Min: 3
+Testing Time: 0.00198 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+13 SrcBytes, udp, Label, DstAddr, Dport, TotPkts, Dir, SrcAddr, State, Dur, Sport, tcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05384 seconds
+Random Forest Depths curr -> Avg: 3.58, Max: 6, Min: 2
+Testing Time: 0.00188 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05408 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.03, Max: 8, Min: 3
+Testing Time: 0.00198 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+14 rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, Dir, SrcAddr, State, Dur, Sport, tcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05411 seconds
+Random Forest Depths curr -> Avg: 3.61, Max: 6, Min: 2
+Testing Time: 0.00199 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05402 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.94, Max: 8, Min: 3
+Testing Time: 0.00220 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+15 rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05407 seconds
+Random Forest Depths curr -> Avg: 3.74, Max: 6, Min: 2
+Testing Time: 0.00198 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05474 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.95, Max: 9, Min: 2
+Testing Time: 0.00216 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+16 rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, igmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05288 seconds
+Random Forest Depths curr -> Avg: 3.97, Max: 6, Min: 2
+Testing Time: 0.00224 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05557 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.05, Max: 7, Min: 2
+Testing Time: 0.00212 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+17 rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, igmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, rtcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05520 seconds
+Random Forest Depths curr -> Avg: 3.56, Max: 7, Min: 2
+Testing Time: 0.00196 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05319 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.98, Max: 8, Min: 2
+Testing Time: 0.00199 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+18 ipx/spx, rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, igmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, rtcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05315 seconds
+Random Forest Depths curr -> Avg: 3.52, Max: 6, Min: 2
+Testing Time: 0.00246 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05876 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.03, Max: 9, Min: 2
+Testing Time: 0.00229 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+19 ipx/spx, rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, rtcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05344 seconds
+Random Forest Depths curr -> Avg: 3.76, Max: 6, Min: 2
+Testing Time: 0.00210 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05477 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.98, Max: 9, Min: 2
+Testing Time: 0.00216 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+20 ipx/spx, arp, rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, rtcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05437 seconds
+Random Forest Depths curr -> Avg: 3.74, Max: 6, Min: 2
+Testing Time: 0.00203 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05678 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.13, Max: 8, Min: 2
+Testing Time: 0.00215 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+21 ipx/spx, pim, arp, rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, rtcp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05257 seconds
+Random Forest Depths curr -> Avg: 3.82, Max: 6, Min: 2
+Testing Time: 0.00207 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05291 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.24, Max: 9, Min: 3
+Testing Time: 0.00213 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+22 ipx/spx, pim, arp, rtp, SrcBytes, udp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, rtcp, rarp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05191 seconds
+Random Forest Depths curr -> Avg: 3.83, Max: 7, Min: 2
+Testing Time: 0.00189 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05339 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.51, Max: 9, Min: 4
+Testing Time: 0.00235 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+23 ipx/spx, pim, arp, rtp, SrcBytes, udp, esp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, rtcp, rarp, TotBytes
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05231 seconds
+Random Forest Depths curr -> Avg: 4.11, Max: 7, Min: 2
+Testing Time: 0.00183 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05577 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.41, Max: 10, Min: 3
+Testing Time: 0.00221 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+24 ipx/spx, pim, arp, rtp, SrcBytes, udp, esp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, Dur, Sport, tcp, rtcp, rarp, TotBytes, ipv6
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05737 seconds
+Random Forest Depths curr -> Avg: 4.01, Max: 8, Min: 2
+Testing Time: 0.00265 seconds
+Accuracy: 0.8750
+Precision: 0.8739
+Recall: 0.8750
+F1 Score: 0.8727
+F2 Score: 0.8737
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.8824    0.9375    0.9091        16
+
+    accuracy                         0.8750        24
+   macro avg     0.8697    0.8438    0.8545        24
+weighted avg     0.8739    0.8750    0.8727        24
+
+Confusion Matrix:
+[[ 6  2]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05945 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.47, Max: 9, Min: 3
+Testing Time: 0.00222 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.8750
+Precision: 0.8737
+Recall: 0.8750
+F1 Score: 0.8721
+F2 Score: 0.8733
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.8750    0.8750    0.8750         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.8750        24
+   macro avg     0.8737    0.8750    0.8721        24
+weighted avg     0.8737    0.8750    0.8721        24
+
+Confusion Matrix:
+[[6 1 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+25 ipx/spx, pim, arp, rtp, SrcBytes, udp, esp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, llc, Dur, Sport, tcp, rtcp, rarp, TotBytes, ipv6
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.07617 seconds
+Random Forest Depths curr -> Avg: 3.92, Max: 8, Min: 2
+Testing Time: 0.00225 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05411 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.29, Max: 10, Min: 3
+Testing Time: 0.00210 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+26 ipx/spx, pim, arp, gre, rtp, SrcBytes, udp, esp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, llc, Dur, Sport, tcp, rtcp, rarp, TotBytes, ipv6
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.06030 seconds
+Random Forest Depths curr -> Avg: 3.82, Max: 7, Min: 2
+Testing Time: 0.00205 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05602 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.16, Max: 8, Min: 2
+Testing Time: 0.00208 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+27 ipx/spx, pim, arp, gre, rtp, SrcBytes, udp, esp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, llc, Dur, Sport, tcp, unas, rtcp, rarp, TotBytes, ipv6
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05979 seconds
+Random Forest Depths curr -> Avg: 3.88, Max: 6, Min: 2
+Testing Time: 0.00199 seconds
+Accuracy: 0.8750
+Precision: 0.8739
+Recall: 0.8750
+F1 Score: 0.8727
+F2 Score: 0.8737
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.8824    0.9375    0.9091        16
+
+    accuracy                         0.8750        24
+   macro avg     0.8697    0.8438    0.8545        24
+weighted avg     0.8739    0.8750    0.8727        24
+
+Confusion Matrix:
+[[ 6  2]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05353 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.18, Max: 9, Min: 3
+Testing Time: 0.00218 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.8750
+Precision: 0.8737
+Recall: 0.8750
+F1 Score: 0.8721
+F2 Score: 0.8733
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.8750    0.8750    0.8750         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.8750        24
+   macro avg     0.8737    0.8750    0.8721        24
+weighted avg     0.8737    0.8750    0.8721        24
+
+Confusion Matrix:
+[[6 1 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+28 ipx/spx, pim, arp, gre, rtp, SrcBytes, udp, esp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, llc, Dur, Sport, tcp, unas, rtcp, rarp, TotBytes, udt, ipv6
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05689 seconds
+Random Forest Depths curr -> Avg: 3.97, Max: 7, Min: 2
+Testing Time: 0.00207 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05905 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.26, Max: 8, Min: 3
+Testing Time: 0.00217 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+29 ipx/spx, pim, arp, gre, rtp, SrcBytes, udp, esp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, llc, Dur, Sport, tcp, ipnip, unas, rtcp, rarp, TotBytes, udt, ipv6
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05737 seconds
+Random Forest Depths curr -> Avg: 4.05, Max: 7, Min: 2
+Testing Time: 0.00199 seconds
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 1 15]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05327 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.33, Max: 10, Min: 3
+Testing Time: 0.00202 seconds
+Accuracy: 0.9375
+Precision: 0.9444
+Recall: 0.9375
+F1 Score: 0.9373
+F2 Score: 0.9365
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9375        16
+   macro avg     0.9444    0.9375    0.9373        16
+weighted avg     0.9444    0.9375    0.9373        16
+
+Confusion Matrix:
+[[7 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9167
+Precision: 0.9213
+Recall: 0.9167
+F1 Score: 0.9165
+F2 Score: 0.9160
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     1.0000    0.8750    0.9333         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9167        24
+   macro avg     0.9213    0.9167    0.9165        24
+weighted avg     0.9213    0.9167    0.9165        24
+
+Confusion Matrix:
+[[7 0 1]
+ [1 7 0]
+ [0 0 8]]
+
+Processing dataset: train-train.csv
+30 ipx/spx, pim, arp, gre, rtp, rsvp, SrcBytes, udp, esp, Label, DstAddr, Dport, TotPkts, igmp, ipv6-icmp, Dir, icmp, SrcAddr, State, llc, Dur, Sport, tcp, ipnip, unas, rtcp, rarp, TotBytes, udt, ipv6
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.05320 seconds
+Random Forest Depths curr -> Avg: 3.84, Max: 6, Min: 2
+Testing Time: 0.00193 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.9412    1.0000    0.9697        16
+
+    accuracy                         0.9583        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
+
+Confusion Matrix:
+[[ 7  1]
+ [ 0 16]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05333 seconds
+Random Forest Depths (Stage 2) -> Avg: 5.47, Max: 9, Min: 3
+Testing Time: 0.00208 seconds
+Accuracy: 0.9412
+Precision: 0.9477
+Recall: 0.9412
+F1 Score: 0.9412
+F2 Score: 0.9404
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8889    0.9412         9
+           1     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9412        17
+   macro avg     0.9444    0.9444    0.9412        17
+weighted avg     0.9477    0.9412    0.9412        17
+
+Confusion Matrix:
+[[8 1]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.9583
+Precision: 0.9630
+Recall: 0.9583
+F1 Score: 0.9582
+F2 Score: 0.9577
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     1.0000    1.0000    1.0000         8
+           2     0.8889    1.0000    0.9412         8
+
+    accuracy                         0.9583        24
+   macro avg     0.9630    0.9583    0.9582        24
+weighted avg     0.9630    0.9583    0.9582        24
+
+Confusion Matrix:
+[[7 0 1]
+ [0 8 0]
+ [0 0 8]]
+
+All loops completed.
