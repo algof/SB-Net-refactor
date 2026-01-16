@@ -1,0 +1,26 @@
+# Compare old code vs new code
+Compare/
+
+# Dataset files
+combined_train.csv
+
+train-test.csv
+train-train.csv
+
+Datasets/CTU-13/**
+!Datasets/CTU-13/data_maker_CTU_13.ipynb
+!Datasets/CTU-13/data_sampler_CTU_13.ipynb
+
+Datasets/NCC/**
+!Datasets/NCC/data_maker_NCC.ipynb
+!Datasets/NCC/data_sampler_NCC.ipynb
+
+Datasets/NCC-2/**
+!Datasets/NCC-2/data_maker_NCC_2.ipynb
+!Datasets/NCC-2/data_sampler_NCC_2.ipynb
+
+# Translation script
+translate_notebooks.py
+
+# Backup files from translation script
+*.backup

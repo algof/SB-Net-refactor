@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-# Data ranking dari berbagai metode
+# Ranking data from various methods
 rankings = {
     'skb_chi2': ['SrcBytes', 'TotBytes', 'SrcAddr', 'DstAddr', 'Sport', 'Dport', 'TotPkts', 'State', 'Dur', 'tcp', 'Dir', 'udp', 'icmp', 'igmp', 'rtp', 'rtcp', 'arp', 'ipv6-icmp', 'ipx/spx', 'ipv6', 'pim', 'udt', 'esp', 'rarp', 'unas', 'llc', 'gre', 'rsvp', 'ipnip'], 
     'skb_af': ['State', 'tcp', 'udp', 'Dir', 'Sport', 'DstAddr', 'Dport', 'SrcAddr', 'SrcBytes', 'Dur', 'icmp', 'TotBytes', 'TotPkts', 'igmp', 'rtp', 'rtcp', 'arp', 'ipv6-icmp', 'ipx/spx', 'ipv6', 'pim', 'udt', 'esp', 'rarp', 'unas', 'llc', 'gre', 'rsvp', 'ipnip'], 
@@ -12,26 +12,24 @@ rankings = {
     'sfm_tb': ['SrcAddr', 'Sport', 'Dport', 'DstAddr', 'State', 'TotBytes', 'SrcBytes', 'Dur', 'TotPkts', 'tcp', 'udp', 'Dir', 'icmp', 'igmp', 'rtp', 'rtcp', 'arp', 'ipv6-icmp', 'ipx/spx', 'esp', 'ipv6', 'pim', 'llc', 'udt', 'unas', 'rarp', 'gre', 'rsvp', 'ipnip'], 
 }
 
-# Menghitung skor Borda untuk setiap fitur
+# Calculate Borda score for each feature
 borda_scores = defaultdict(int)
 n_methods = len(rankings)
 
 for ranking in rankings.values():
     for position, feature in enumerate(ranking):
-        borda_scores[feature] += (len(ranking) - position)  # Skor dihitung berdasarkan posisi ranking
+        borda_scores[feature] += (len(ranking) - position)  # Score is calculated based on ranking position
 
-# Mengurutkan fitur berdasarkan skor tertinggi
+# Sort features by highest score
 sorted_features = sorted(borda_scores.items(), key=lambda x: x[1], reverse=True)
 
-# Memisahkan fitur dan skor untuk plotting
+# Separate features and scores for plotting
 features, scores = zip(*sorted_features)
 
-# Visualisasi hasil dengan bar chart
+# Visualize results with bar chart
 plt.figure(figsize=(10, 6))
-plt.barh(features[::-1], scores[::-1], color='skyblue')  # Dibalik agar ranking tertinggi di atas
-# plt.xlabel("Skor Borda")
+plt.barh(features[::-1], scores[::-1], color='skyblue')  # Reversed so that the highest ranking is at the top
 plt.xlabel("Borda score")
-# plt.ylabel("Fitur")
 plt.ylabel("Feature")
 plt.title("Rank Aggregation using Borda Count")
 plt.grid(axis='x', linestyle='--', alpha=0.7)
