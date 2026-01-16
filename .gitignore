@@ -19,8 +19,15 @@ Datasets/NCC-2/**
 !Datasets/NCC-2/data_maker_NCC_2.ipynb
 !Datasets/NCC-2/data_sampler_NCC_2.ipynb
 
-# Translation script
+# additional script
 translate_notebooks.py
+delete_run.py
 
 # Backup files from translation script
 *.backup
+
+# co_run.sh from CodeOcean
+co_run.sh
+
+# Image files
+borda_score.png

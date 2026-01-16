@@ -1,1565 +1,159 @@
 Processing dataset: train-train.csv
 --- Stage 1 with Decision Tree (Gini) ---
-Training Time: 0.00140 seconds
-Tree Depth: 2
-Accuracy: 0.9583
-Precision: 0.9608
-Recall: 0.9583
-F1 Score: 0.9576
-F2 Score: 0.9576
+Training Time: 0.00200 seconds
+Tree Depth: 3
+Accuracy: 0.9167
+Precision: 0.9167
+Recall: 0.9167
+F1 Score: 0.9167
+F2 Score: 0.9167
 
               precision    recall  f1-score   support
 
-           0     1.0000    0.8750    0.9333         8
-           1     0.9412    1.0000    0.9697        16
+           0     0.8750    0.8750    0.8750         8
+           1     0.9375    0.9375    0.9375        16
 
-    accuracy                         0.9583        24
-   macro avg     0.9706    0.9375    0.9515        24
-weighted avg     0.9608    0.9583    0.9576        24
+    accuracy                         0.9167        24
+   macro avg     0.9062    0.9062    0.9062        24
+weighted avg     0.9167    0.9167    0.9167        24
 
 Confusion Matrix:
 [[ 7  1]
- [ 0 16]]
-
------- Stage 2 with Decision Tree (Gini) ------
-Training Time: 0.00096 seconds
-Tree Depth (Stage 2): 4
-Accuracy: 0.8824
-Precision: 0.9059
-Recall: 0.8824
-F1 Score: 0.8815
-F2 Score: 0.8791
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.7778    0.8750         9
-           1     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8824        17
-   macro avg     0.9000    0.8889    0.8819        17
-weighted avg     0.9059    0.8824    0.8815        17
-
-Confusion Matrix:
-[[7 2]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.8750
-Precision: 0.8857
-Recall: 0.8750
-F1 Score: 0.8741
-F2 Score: 0.8730
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.8571    0.7500    0.8000         8
-           2     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8750        24
-   macro avg     0.8857    0.8750    0.8741        24
-weighted avg     0.8857    0.8750    0.8741        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 6 2]
- [0 0 8]]
-
------- Stage 2 with Random Forest (Gini) ------
-Training Time: 0.05358 seconds
-Random Forest Depths (Stage 2) -> Avg: 5.05, Max: 7, Min: 2
-Accuracy: 0.9412
-Precision: 0.9477
-Recall: 0.9412
-F1 Score: 0.9412
-F2 Score: 0.9404
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8889    0.9412         9
-           1     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9412        17
-   macro avg     0.9444    0.9444    0.9412        17
-weighted avg     0.9477    0.9412    0.9412        17
-
-Confusion Matrix:
-[[8 1]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9583
-Precision: 0.9630
-Recall: 0.9583
-F1 Score: 0.9582
-F2 Score: 0.9577
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    1.0000    1.0000         8
-           2     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9583        24
-   macro avg     0.9630    0.9583    0.9582        24
-weighted avg     0.9630    0.9583    0.9582        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 8 0]
- [0 0 8]]
-
------- Stage 2 with Naive Bayes ------
-Training Time: 0.00078 seconds
-Accuracy: 0.6471
-Precision: 0.6980
-Recall: 0.6471
-F1 Score: 0.6319
-F2 Score: 0.6326
-
-              precision    recall  f1-score   support
-
-           0     0.8000    0.4444    0.5714         9
-           1     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.6471        17
-   macro avg     0.6917    0.6597    0.6357        17
-weighted avg     0.6980    0.6471    0.6319        17
-
-Confusion Matrix:
-[[4 5]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.7083
-Precision: 0.7278
-Recall: 0.7083
-F1 Score: 0.6983
-F2 Score: 0.6994
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.6000    0.3750    0.4615         8
-           2     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.7083        24
-   macro avg     0.7278    0.7083    0.6983        24
-weighted avg     0.7278    0.7083    0.6983        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 3 5]
- [0 1 7]]
-
------- Stage 2 with KNN (k=5) ------
-Training Time: 0.00076 seconds
-Accuracy: 0.7647
-Precision: 0.7832
-Recall: 0.7647
-F1 Score: 0.7631
-F2 Score: 0.7615
-
-              precision    recall  f1-score   support
-
-           0     0.8571    0.6667    0.7500         9
-           1     0.7000    0.8750    0.7778         8
-
-    accuracy                         0.7647        17
-   macro avg     0.7786    0.7708    0.7639        17
-weighted avg     0.7832    0.7647    0.7631        17
-
-Confusion Matrix:
-[[6 3]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.7917
-Precision: 0.8048
-Recall: 0.7917
-F1 Score: 0.7926
-F2 Score: 0.7906
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.7143    0.6250    0.6667         8
-           2     0.7000    0.8750    0.7778         8
-
-    accuracy                         0.7917        24
-   macro avg     0.8048    0.7917    0.7926        24
-weighted avg     0.8048    0.7917    0.7926        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 5 3]
- [0 1 7]]
-
------- Stage 2 with Gradient Boosting ------
-Training Time: 0.03840 seconds
-Accuracy: 0.8824
-Precision: 0.9059
-Recall: 0.8824
-F1 Score: 0.8815
-F2 Score: 0.8791
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.7778    0.8750         9
-           1     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8824        17
-   macro avg     0.9000    0.8889    0.8819        17
-weighted avg     0.9059    0.8824    0.8815        17
-
-Confusion Matrix:
-[[7 2]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9167
-Precision: 0.9333
-Recall: 0.9167
-F1 Score: 0.9185
-F2 Score: 0.9158
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    0.8750    0.9333         8
-           2     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.9167        24
-   macro avg     0.9333    0.9167    0.9185        24
-weighted avg     0.9333    0.9167    0.9185        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 7 1]
- [0 0 8]]
-
------- Stage 2 with Logistic Regression ------
-Training Time: 0.01248 seconds
-Accuracy: 0.7647
-Precision: 0.8431
-Recall: 0.7647
-F1 Score: 0.7546
-F2 Score: 0.7506
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5556    0.7143         9
-           1     0.6667    1.0000    0.8000         8
-
-    accuracy                         0.7647        17
-   macro avg     0.8333    0.7778    0.7571        17
-weighted avg     0.8431    0.7647    0.7546        17
-
-Confusion Matrix:
-[[5 4]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.8333
-Precision: 0.8889
-Recall: 0.8333
-F1 Score: 0.8342
-F2 Score: 0.8274
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    0.6250    0.7692         8
-           2     0.6667    1.0000    0.8000         8
-
-    accuracy                         0.8333        24
-   macro avg     0.8889    0.8333    0.8342        24
-weighted avg     0.8889    0.8333    0.8342        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 5 3]
- [0 0 8]]
-
---- Stage 1 with Random Forest (Gini) ---
-Training Time: 0.06564 seconds
-Random Forest Depths -> Avg: 3.97, Max: 6, Min: 2
-Accuracy: 0.9583
-Precision: 0.9608
-Recall: 0.9583
-F1 Score: 0.9576
-F2 Score: 0.9576
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.9412    1.0000    0.9697        16
-
-    accuracy                         0.9583        24
-   macro avg     0.9706    0.9375    0.9515        24
-weighted avg     0.9608    0.9583    0.9576        24
-
-Confusion Matrix:
-[[ 7  1]
- [ 0 16]]
-
------- Stage 2 with Decision Tree (Gini) ------
-Training Time: 0.00482 seconds
-Tree Depth (Stage 2): 4
-Accuracy: 0.8824
-Precision: 0.9059
-Recall: 0.8824
-F1 Score: 0.8815
-F2 Score: 0.8791
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.7778    0.8750         9
-           1     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8824        17
-   macro avg     0.9000    0.8889    0.8819        17
-weighted avg     0.9059    0.8824    0.8815        17
-
-Confusion Matrix:
-[[7 2]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.8750
-Precision: 0.8857
-Recall: 0.8750
-F1 Score: 0.8741
-F2 Score: 0.8730
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.8571    0.7500    0.8000         8
-           2     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8750        24
-   macro avg     0.8857    0.8750    0.8741        24
-weighted avg     0.8857    0.8750    0.8741        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 6 2]
- [0 0 8]]
-
------- Stage 2 with Random Forest (Gini) ------
-Training Time: 0.05566 seconds
-Random Forest Depths (Stage 2) -> Avg: 5.05, Max: 7, Min: 2
-Accuracy: 0.9412
-Precision: 0.9477
-Recall: 0.9412
-F1 Score: 0.9412
-F2 Score: 0.9404
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8889    0.9412         9
-           1     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9412        17
-   macro avg     0.9444    0.9444    0.9412        17
-weighted avg     0.9477    0.9412    0.9412        17
-
-Confusion Matrix:
-[[8 1]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9583
-Precision: 0.9630
-Recall: 0.9583
-F1 Score: 0.9582
-F2 Score: 0.9577
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    1.0000    1.0000         8
-           2     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9583        24
-   macro avg     0.9630    0.9583    0.9582        24
-weighted avg     0.9630    0.9583    0.9582        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 8 0]
- [0 0 8]]
-
------- Stage 2 with Naive Bayes ------
-Training Time: 0.00081 seconds
-Accuracy: 0.6471
-Precision: 0.6980
-Recall: 0.6471
-F1 Score: 0.6319
-F2 Score: 0.6326
-
-              precision    recall  f1-score   support
-
-           0     0.8000    0.4444    0.5714         9
-           1     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.6471        17
-   macro avg     0.6917    0.6597    0.6357        17
-weighted avg     0.6980    0.6471    0.6319        17
-
-Confusion Matrix:
-[[4 5]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.7083
-Precision: 0.7278
-Recall: 0.7083
-F1 Score: 0.6983
-F2 Score: 0.6994
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.6000    0.3750    0.4615         8
-           2     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.7083        24
-   macro avg     0.7278    0.7083    0.6983        24
-weighted avg     0.7278    0.7083    0.6983        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 3 5]
- [0 1 7]]
-
------- Stage 2 with KNN (k=5) ------
-Training Time: 0.00087 seconds
-Accuracy: 0.7647
-Precision: 0.7832
-Recall: 0.7647
-F1 Score: 0.7631
-F2 Score: 0.7615
-
-              precision    recall  f1-score   support
-
-           0     0.8571    0.6667    0.7500         9
-           1     0.7000    0.8750    0.7778         8
-
-    accuracy                         0.7647        17
-   macro avg     0.7786    0.7708    0.7639        17
-weighted avg     0.7832    0.7647    0.7631        17
-
-Confusion Matrix:
-[[6 3]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.7917
-Precision: 0.8048
-Recall: 0.7917
-F1 Score: 0.7926
-F2 Score: 0.7906
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.7143    0.6250    0.6667         8
-           2     0.7000    0.8750    0.7778         8
-
-    accuracy                         0.7917        24
-   macro avg     0.8048    0.7917    0.7926        24
-weighted avg     0.8048    0.7917    0.7926        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 5 3]
- [0 1 7]]
-
------- Stage 2 with Gradient Boosting ------
-Training Time: 0.03731 seconds
-Accuracy: 0.8824
-Precision: 0.9059
-Recall: 0.8824
-F1 Score: 0.8815
-F2 Score: 0.8791
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.7778    0.8750         9
-           1     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8824        17
-   macro avg     0.9000    0.8889    0.8819        17
-weighted avg     0.9059    0.8824    0.8815        17
-
-Confusion Matrix:
-[[7 2]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9167
-Precision: 0.9333
-Recall: 0.9167
-F1 Score: 0.9185
-F2 Score: 0.9158
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    0.8750    0.9333         8
-           2     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.9167        24
-   macro avg     0.9333    0.9167    0.9185        24
-weighted avg     0.9333    0.9167    0.9185        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 7 1]
- [0 0 8]]
-
------- Stage 2 with Logistic Regression ------
-Training Time: 0.01245 seconds
-Accuracy: 0.7647
-Precision: 0.8431
-Recall: 0.7647
-F1 Score: 0.7546
-F2 Score: 0.7506
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5556    0.7143         9
-           1     0.6667    1.0000    0.8000         8
-
-    accuracy                         0.7647        17
-   macro avg     0.8333    0.7778    0.7571        17
-weighted avg     0.8431    0.7647    0.7546        17
-
-Confusion Matrix:
-[[5 4]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.8333
-Precision: 0.8889
-Recall: 0.8333
-F1 Score: 0.8342
-F2 Score: 0.8274
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    0.6250    0.7692         8
-           2     0.6667    1.0000    0.8000         8
-
-    accuracy                         0.8333        24
-   macro avg     0.8889    0.8333    0.8342        24
-weighted avg     0.8889    0.8333    0.8342        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 5 3]
- [0 0 8]]
-
---- Stage 1 with Naive Bayes ---
-Training Time: 0.00166 seconds
-Accuracy: 0.9583
-Precision: 0.9630
-Recall: 0.9583
-F1 Score: 0.9589
-F2 Score: 0.9581
-
-              precision    recall  f1-score   support
-
-           0     0.8889    1.0000    0.9412         8
-           1     1.0000    0.9375    0.9677        16
-
-    accuracy                         0.9583        24
-   macro avg     0.9444    0.9688    0.9545        24
-weighted avg     0.9630    0.9583    0.9589        24
-
-Confusion Matrix:
-[[ 8  0]
  [ 1 15]]
 
 ------ Stage 2 with Decision Tree (Gini) ------
-Training Time: 0.00135 seconds
+Training Time: 0.00102 seconds
 Tree Depth (Stage 2): 4
-Accuracy: 0.8667
-Precision: 0.8933
-Recall: 0.8667
-F1 Score: 0.8630
-F2 Score: 0.8615
+Accuracy: 0.7500
+Precision: 0.7500
+Recall: 0.7500
+F1 Score: 0.7500
+F2 Score: 0.7500
 
               precision    recall  f1-score   support
 
-           0     1.0000    0.7143    0.8333         7
-           1     0.8000    1.0000    0.8889         8
+           0     0.7500    0.7500    0.7500         8
+           1     0.7500    0.7500    0.7500         8
 
-    accuracy                         0.8667        15
-   macro avg     0.9000    0.8571    0.8611        15
-weighted avg     0.8933    0.8667    0.8630        15
+    accuracy                         0.7500        16
+   macro avg     0.7500    0.7500    0.7500        16
+weighted avg     0.7500    0.7500    0.7500        16
 
 Confusion Matrix:
-[[5 2]
- [0 8]]
+[[6 2]
+ [2 6]]
 
 Combined Classification Report:
-Accuracy: 0.8750
-Precision: 0.8963
-Recall: 0.8750
-F1 Score: 0.8664
-F2 Score: 0.8679
+Accuracy: 0.7500
+Precision: 0.7500
+Recall: 0.7500
+F1 Score: 0.7500
+F2 Score: 0.7500
 
               precision    recall  f1-score   support
 
-           0     0.8889    1.0000    0.9412         8
-           1     1.0000    0.6250    0.7692         8
-           2     0.8000    1.0000    0.8889         8
+           0     0.8750    0.8750    0.8750         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.7500    0.7500    0.7500         8
 
-    accuracy                         0.8750        24
-   macro avg     0.8963    0.8750    0.8664        24
-weighted avg     0.8963    0.8750    0.8664        24
+    accuracy                         0.7500        24
+   macro avg     0.7500    0.7500    0.7500        24
+weighted avg     0.7500    0.7500    0.7500        24
 
 Confusion Matrix:
-[[8 0 0]
+[[7 1 0]
  [1 5 2]
- [0 0 8]]
+ [0 2 6]]
 
 ------ Stage 2 with Random Forest (Gini) ------
-Training Time: 0.05548 seconds
-Random Forest Depths (Stage 2) -> Avg: 5.05, Max: 7, Min: 2
-Accuracy: 1.0000
-Precision: 1.0000
-Recall: 1.0000
-F1 Score: 1.0000
-F2 Score: 1.0000
+Training Time: 0.06637 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.39, Max: 8, Min: 2
+Accuracy: 0.7500
+Precision: 0.7500
+Recall: 0.7500
+F1 Score: 0.7500
+F2 Score: 0.7500
 
               precision    recall  f1-score   support
 
-           0     1.0000    1.0000    1.0000         7
-           1     1.0000    1.0000    1.0000         8
+           0     0.7500    0.7500    0.7500         8
+           1     0.7500    0.7500    0.7500         8
 
-    accuracy                         1.0000        15
-   macro avg     1.0000    1.0000    1.0000        15
-weighted avg     1.0000    1.0000    1.0000        15
-
-Confusion Matrix:
-[[7 0]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9583
-Precision: 0.9630
-Recall: 0.9583
-F1 Score: 0.9582
-F2 Score: 0.9577
-
-              precision    recall  f1-score   support
-
-           0     0.8889    1.0000    0.9412         8
-           1     1.0000    0.8750    0.9333         8
-           2     1.0000    1.0000    1.0000         8
-
-    accuracy                         0.9583        24
-   macro avg     0.9630    0.9583    0.9582        24
-weighted avg     0.9630    0.9583    0.9582        24
+    accuracy                         0.7500        16
+   macro avg     0.7500    0.7500    0.7500        16
+weighted avg     0.7500    0.7500    0.7500        16
 
 Confusion Matrix:
-[[8 0 0]
- [1 7 0]
- [0 0 8]]
-
------- Stage 2 with Naive Bayes ------
-Training Time: 0.00075 seconds
-Accuracy: 0.6667
-Precision: 0.6894
-Recall: 0.6667
-F1 Score: 0.6475
-F2 Score: 0.6529
-
-              precision    recall  f1-score   support
-
-           0     0.7500    0.4286    0.5455         7
-           1     0.6364    0.8750    0.7368         8
-
-    accuracy                         0.6667        15
-   macro avg     0.6932    0.6518    0.6411        15
-weighted avg     0.6894    0.6667    0.6475        15
-
-Confusion Matrix:
-[[3 4]
- [1 7]]
+[[6 2]
+ [2 6]]
 
 Combined Classification Report:
 Accuracy: 0.7500
-Precision: 0.7584
+Precision: 0.7500
 Recall: 0.7500
-F1 Score: 0.7260
-F2 Score: 0.7354
+F1 Score: 0.7500
+F2 Score: 0.7500
 
               precision    recall  f1-score   support
 
-           0     0.8889    1.0000    0.9412         8
-           1     0.7500    0.3750    0.5000         8
-           2     0.6364    0.8750    0.7368         8
+           0     0.8750    0.8750    0.8750         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.7500    0.7500    0.7500         8
 
     accuracy                         0.7500        24
-   macro avg     0.7584    0.7500    0.7260        24
-weighted avg     0.7584    0.7500    0.7260        24
+   macro avg     0.7500    0.7500    0.7500        24
+weighted avg     0.7500    0.7500    0.7500        24
 
 Confusion Matrix:
-[[8 0 0]
- [1 3 4]
- [0 1 7]]
-
------- Stage 2 with KNN (k=5) ------
-Training Time: 0.00071 seconds
-Accuracy: 0.7333
-Precision: 0.7467
-Recall: 0.7333
-F1 Score: 0.7259
-F2 Score: 0.7273
-
-              precision    recall  f1-score   support
-
-           0     0.8000    0.5714    0.6667         7
-           1     0.7000    0.8750    0.7778         8
-
-    accuracy                         0.7333        15
-   macro avg     0.7500    0.7232    0.7222        15
-weighted avg     0.7467    0.7333    0.7259        15
-
-Confusion Matrix:
-[[4 3]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.7917
-Precision: 0.7963
-Recall: 0.7917
-F1 Score: 0.7781
-F2 Score: 0.7832
-
-              precision    recall  f1-score   support
-
-           0     0.8889    1.0000    0.9412         8
-           1     0.8000    0.5000    0.6154         8
-           2     0.7000    0.8750    0.7778         8
-
-    accuracy                         0.7917        24
-   macro avg     0.7963    0.7917    0.7781        24
-weighted avg     0.7963    0.7917    0.7781        24
-
-Confusion Matrix:
-[[8 0 0]
- [1 4 3]
- [0 1 7]]
-
------- Stage 2 with Gradient Boosting ------
-Training Time: 0.03767 seconds
-Accuracy: 0.9333
-Precision: 0.9407
-Recall: 0.9333
-F1 Score: 0.9327
-F2 Score: 0.9321
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8571    0.9231         7
-           1     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9333        15
-   macro avg     0.9444    0.9286    0.9321        15
-weighted avg     0.9407    0.9333    0.9327        15
-
-Confusion Matrix:
-[[6 1]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9167
-Precision: 0.9259
-Recall: 0.9167
-F1 Score: 0.9132
-F2 Score: 0.9136
-
-              precision    recall  f1-score   support
-
-           0     0.8889    1.0000    0.9412         8
-           1     1.0000    0.7500    0.8571         8
-           2     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9167        24
-   macro avg     0.9259    0.9167    0.9132        24
-weighted avg     0.9259    0.9167    0.9132        24
-
-Confusion Matrix:
-[[8 0 0]
- [1 6 1]
- [0 0 8]]
-
------- Stage 2 with Logistic Regression ------
-Training Time: 0.01051 seconds
-Accuracy: 0.8000
-Precision: 0.8545
-Recall: 0.8000
-F1 Score: 0.7885
-F2 Score: 0.7878
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5714    0.7273         7
-           1     0.7273    1.0000    0.8421         8
-
-    accuracy                         0.8000        15
-   macro avg     0.8636    0.7857    0.7847        15
-weighted avg     0.8545    0.8000    0.7885        15
-
-Confusion Matrix:
-[[4 3]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.8333
-Precision: 0.8721
-Recall: 0.8333
-F1 Score: 0.8166
-F2 Score: 0.8205
-
-              precision    recall  f1-score   support
-
-           0     0.8889    1.0000    0.9412         8
-           1     1.0000    0.5000    0.6667         8
-           2     0.7273    1.0000    0.8421         8
-
-    accuracy                         0.8333        24
-   macro avg     0.8721    0.8333    0.8166        24
-weighted avg     0.8721    0.8333    0.8166        24
-
-Confusion Matrix:
-[[8 0 0]
- [1 4 3]
- [0 0 8]]
-
---- Stage 1 with KNN (k=5) ---
-Training Time: 0.00070 seconds
-Accuracy: 0.8333
-Precision: 0.8667
-Recall: 0.8333
-F1 Score: 0.8148
-F2 Score: 0.8201
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5000    0.6667         8
-           1     0.8000    1.0000    0.8889        16
-
-    accuracy                         0.8333        24
-   macro avg     0.9000    0.7500    0.7778        24
-weighted avg     0.8667    0.8333    0.8148        24
-
-Confusion Matrix:
-[[ 4  4]
- [ 0 16]]
-
------- Stage 2 with Decision Tree (Gini) ------
-Training Time: 0.00097 seconds
-Tree Depth (Stage 2): 4
-Accuracy: 0.8500
-Precision: 0.8909
-Recall: 0.8500
-F1 Score: 0.8511
-F2 Score: 0.8458
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.7500    0.8571        12
-           1     0.7273    1.0000    0.8421         8
-
-    accuracy                         0.8500        20
-   macro avg     0.8636    0.8750    0.8496        20
-weighted avg     0.8909    0.8500    0.8511        20
-
-Confusion Matrix:
-[[9 3]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.7500
-Precision: 0.7980
-Recall: 0.7500
-F1 Score: 0.7382
-F2 Score: 0.7392
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5000    0.6667         8
-           1     0.6667    0.7500    0.7059         8
-           2     0.7273    1.0000    0.8421         8
-
-    accuracy                         0.7500        24
-   macro avg     0.7980    0.7500    0.7382        24
-weighted avg     0.7980    0.7500    0.7382        24
-
-Confusion Matrix:
-[[4 3 1]
- [0 6 2]
- [0 0 8]]
-
------- Stage 2 with Random Forest (Gini) ------
-Training Time: 0.05444 seconds
-Random Forest Depths (Stage 2) -> Avg: 5.05, Max: 7, Min: 2
-Accuracy: 0.9500
-Precision: 0.9556
-Recall: 0.9500
-F1 Score: 0.9504
-F2 Score: 0.9496
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.9167    0.9565        12
-           1     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9500        20
-   macro avg     0.9444    0.9583    0.9488        20
-weighted avg     0.9556    0.9500    0.9504        20
-
-Confusion Matrix:
-[[11  1]
- [ 0  8]]
-
-Combined Classification Report:
-Accuracy: 0.8333
-Precision: 0.8721
-Recall: 0.8333
-F1 Score: 0.8166
-F2 Score: 0.8205
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5000    0.6667         8
-           1     0.7273    1.0000    0.8421         8
-           2     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.8333        24
-   macro avg     0.8721    0.8333    0.8166        24
-weighted avg     0.8721    0.8333    0.8166        24
-
-Confusion Matrix:
-[[4 3 1]
- [0 8 0]
- [0 0 8]]
+[[7 1 0]
+ [1 5 2]
+ [0 2 6]]
 
 ------ Stage 2 with Naive Bayes ------
-Training Time: 0.00087 seconds
-Accuracy: 0.5500
-Precision: 0.6667
-Recall: 0.5500
-F1 Score: 0.5258
-F2 Score: 0.5243
-
-              precision    recall  f1-score   support
-
-           0     0.8000    0.3333    0.4706        12
-           1     0.4667    0.8750    0.6087         8
-
-    accuracy                         0.5500        20
-   macro avg     0.6333    0.6042    0.5396        20
-weighted avg     0.6667    0.5500    0.5258        20
-
-Confusion Matrix:
-[[4 8]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.5833
-Precision: 0.6889
-Recall: 0.5833
-F1 Score: 0.5790
-F2 Score: 0.5685
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5000    0.6667         8
-           1     0.6000    0.3750    0.4615         8
-           2     0.4667    0.8750    0.6087         8
-
-    accuracy                         0.5833        24
-   macro avg     0.6889    0.5833    0.5790        24
-weighted avg     0.6889    0.5833    0.5790        24
-
-Confusion Matrix:
-[[4 1 3]
- [0 3 5]
- [0 1 7]]
-
------- Stage 2 with KNN (k=5) ------
-Training Time: 0.00073 seconds
-Accuracy: 0.7000
-Precision: 0.7583
-Recall: 0.7000
-F1 Score: 0.7000
-F2 Score: 0.6932
-
-              precision    recall  f1-score   support
-
-           0     0.8750    0.5833    0.7000        12
-           1     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.7000        20
-   macro avg     0.7292    0.7292    0.7000        20
-weighted avg     0.7583    0.7000    0.7000        20
-
-Confusion Matrix:
-[[7 5]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.6667
-Precision: 0.7361
-Recall: 0.6667
-F1 Score: 0.6639
+Training Time: 0.00000 seconds
+Accuracy: 0.6875
+Precision: 0.8077
+Recall: 0.6875
+F1 Score: 0.6537
 F2 Score: 0.6587
 
               precision    recall  f1-score   support
 
-           0     1.0000    0.5000    0.6667         8
-           1     0.6250    0.6250    0.6250         8
-           2     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.6667        24
-   macro avg     0.7361    0.6667    0.6639        24
-weighted avg     0.7361    0.6667    0.6639        24
-
-Confusion Matrix:
-[[4 2 2]
- [0 5 3]
- [0 1 7]]
-
------- Stage 2 with Gradient Boosting ------
-Training Time: 0.03771 seconds
-Accuracy: 0.9000
-Precision: 0.9200
-Recall: 0.9000
-F1 Score: 0.9010
-F2 Score: 0.8982
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8333    0.9091        12
-           1     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.9000        20
-   macro avg     0.9000    0.9167    0.8990        20
-weighted avg     0.9200    0.9000    0.9010        20
-
-Confusion Matrix:
-[[10  2]
- [ 0  8]]
-
-Combined Classification Report:
-Accuracy: 0.7917
-Precision: 0.8333
-Recall: 0.7917
-F1 Score: 0.7778
-F2 Score: 0.7804
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5000    0.6667         8
-           1     0.7000    0.8750    0.7778         8
-           2     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.7917        24
-   macro avg     0.8333    0.7917    0.7778        24
-weighted avg     0.8333    0.7917    0.7778        24
-
-Confusion Matrix:
-[[4 3 1]
- [0 7 1]
- [0 0 8]]
-
------- Stage 2 with Logistic Regression ------
-Training Time: 0.01192 seconds
-Accuracy: 0.7000
-Precision: 0.8286
-Recall: 0.7000
-F1 Score: 0.6909
-F2 Score: 0.6812
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5000    0.6667        12
-           1     0.5714    1.0000    0.7273         8
-
-    accuracy                         0.7000        20
-   macro avg     0.7857    0.7500    0.6970        20
-weighted avg     0.8286    0.7000    0.6909        20
-
-Confusion Matrix:
-[[6 6]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.7083
-Precision: 0.8016
-Recall: 0.7083
-F1 Score: 0.7027
-F2 Score: 0.6943
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5000    0.6667         8
-           1     0.8333    0.6250    0.7143         8
-           2     0.5714    1.0000    0.7273         8
-
-    accuracy                         0.7083        24
-   macro avg     0.8016    0.7083    0.7027        24
-weighted avg     0.8016    0.7083    0.7027        24
-
-Confusion Matrix:
-[[4 1 3]
- [0 5 3]
- [0 0 8]]
-
---- Stage 1 with Gradient Boosting ---
-Training Time: 0.03057 seconds
-Accuracy: 0.9583
-Precision: 0.9608
-Recall: 0.9583
-F1 Score: 0.9576
-F2 Score: 0.9576
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.9412    1.0000    0.9697        16
-
-    accuracy                         0.9583        24
-   macro avg     0.9706    0.9375    0.9515        24
-weighted avg     0.9608    0.9583    0.9576        24
-
-Confusion Matrix:
-[[ 7  1]
- [ 0 16]]
-
------- Stage 2 with Decision Tree (Gini) ------
-Training Time: 0.00090 seconds
-Tree Depth (Stage 2): 4
-Accuracy: 0.8824
-Precision: 0.9059
-Recall: 0.8824
-F1 Score: 0.8815
-F2 Score: 0.8791
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.7778    0.8750         9
-           1     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8824        17
-   macro avg     0.9000    0.8889    0.8819        17
-weighted avg     0.9059    0.8824    0.8815        17
-
-Confusion Matrix:
-[[7 2]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.8750
-Precision: 0.8857
-Recall: 0.8750
-F1 Score: 0.8741
-F2 Score: 0.8730
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.8571    0.7500    0.8000         8
-           2     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8750        24
-   macro avg     0.8857    0.8750    0.8741        24
-weighted avg     0.8857    0.8750    0.8741        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 6 2]
- [0 0 8]]
-
------- Stage 2 with Random Forest (Gini) ------
-Training Time: 0.05307 seconds
-Random Forest Depths (Stage 2) -> Avg: 5.05, Max: 7, Min: 2
-Accuracy: 0.9412
-Precision: 0.9477
-Recall: 0.9412
-F1 Score: 0.9412
-F2 Score: 0.9404
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8889    0.9412         9
-           1     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9412        17
-   macro avg     0.9444    0.9444    0.9412        17
-weighted avg     0.9477    0.9412    0.9412        17
-
-Confusion Matrix:
-[[8 1]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9583
-Precision: 0.9630
-Recall: 0.9583
-F1 Score: 0.9582
-F2 Score: 0.9577
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    1.0000    1.0000         8
-           2     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9583        24
-   macro avg     0.9630    0.9583    0.9582        24
-weighted avg     0.9630    0.9583    0.9582        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 8 0]
- [0 0 8]]
-
------- Stage 2 with Naive Bayes ------
-Training Time: 0.00080 seconds
-Accuracy: 0.6471
-Precision: 0.6980
-Recall: 0.6471
-F1 Score: 0.6319
-F2 Score: 0.6326
-
-              precision    recall  f1-score   support
-
-           0     0.8000    0.4444    0.5714         9
-           1     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.6471        17
-   macro avg     0.6917    0.6597    0.6357        17
-weighted avg     0.6980    0.6471    0.6319        17
-
-Confusion Matrix:
-[[4 5]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.7083
-Precision: 0.7278
-Recall: 0.7083
-F1 Score: 0.6983
-F2 Score: 0.6994
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.6000    0.3750    0.4615         8
-           2     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.7083        24
-   macro avg     0.7278    0.7083    0.6983        24
-weighted avg     0.7278    0.7083    0.6983        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 3 5]
- [0 1 7]]
-
------- Stage 2 with KNN (k=5) ------
-Training Time: 0.00076 seconds
-Accuracy: 0.7647
-Precision: 0.7832
-Recall: 0.7647
-F1 Score: 0.7631
-F2 Score: 0.7615
-
-              precision    recall  f1-score   support
-
-           0     0.8571    0.6667    0.7500         9
-           1     0.7000    0.8750    0.7778         8
-
-    accuracy                         0.7647        17
-   macro avg     0.7786    0.7708    0.7639        17
-weighted avg     0.7832    0.7647    0.7631        17
-
-Confusion Matrix:
-[[6 3]
- [1 7]]
-
-Combined Classification Report:
-Accuracy: 0.7917
-Precision: 0.8048
-Recall: 0.7917
-F1 Score: 0.7926
-F2 Score: 0.7906
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     0.7143    0.6250    0.6667         8
-           2     0.7000    0.8750    0.7778         8
-
-    accuracy                         0.7917        24
-   macro avg     0.8048    0.7917    0.7926        24
-weighted avg     0.8048    0.7917    0.7926        24
-
-Confusion Matrix:
-[[7 1 0]
- [0 5 3]
- [0 1 7]]
-
------- Stage 2 with Gradient Boosting ------
-Training Time: 0.03794 seconds
-Accuracy: 0.8824
-Precision: 0.9059
-Recall: 0.8824
-F1 Score: 0.8815
-F2 Score: 0.8791
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.7778    0.8750         9
-           1     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8824        17
-   macro avg     0.9000    0.8889    0.8819        17
-weighted avg     0.9059    0.8824    0.8815        17
-
-Confusion Matrix:
-[[7 2]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9167
-Precision: 0.9333
-Recall: 0.9167
-F1 Score: 0.9185
-F2 Score: 0.9158
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    0.8750    0.9333         8
-           2     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.9167        24
-   macro avg     0.9333    0.9167    0.9185        24
-weighted avg     0.9333    0.9167    0.9185        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 7 1]
- [0 0 8]]
-
------- Stage 2 with Logistic Regression ------
-Training Time: 0.01203 seconds
-Accuracy: 0.7647
-Precision: 0.8431
-Recall: 0.7647
-F1 Score: 0.7546
-F2 Score: 0.7506
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.5556    0.7143         9
-           1     0.6667    1.0000    0.8000         8
-
-    accuracy                         0.7647        17
-   macro avg     0.8333    0.7778    0.7571        17
-weighted avg     0.8431    0.7647    0.7546        17
-
-Confusion Matrix:
-[[5 4]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.8333
-Precision: 0.8889
-Recall: 0.8333
-F1 Score: 0.8342
-F2 Score: 0.8274
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.8750    0.9333         8
-           1     1.0000    0.6250    0.7692         8
-           2     0.6667    1.0000    0.8000         8
-
-    accuracy                         0.8333        24
-   macro avg     0.8889    0.8333    0.8342        24
-weighted avg     0.8889    0.8333    0.8342        24
-
-Confusion Matrix:
-[[7 0 1]
- [0 5 3]
- [0 0 8]]
-
---- Stage 1 with Logistic Regression ---
-Training Time: 0.01202 seconds
-Accuracy: 1.0000
-Precision: 1.0000
-Recall: 1.0000
-F1 Score: 1.0000
-F2 Score: 1.0000
-
-              precision    recall  f1-score   support
-
-           0     1.0000    1.0000    1.0000         8
-           1     1.0000    1.0000    1.0000        16
-
-    accuracy                         1.0000        24
-   macro avg     1.0000    1.0000    1.0000        24
-weighted avg     1.0000    1.0000    1.0000        24
-
-Confusion Matrix:
-[[ 8  0]
- [ 0 16]]
-
------- Stage 2 with Decision Tree (Gini) ------
-Training Time: 0.00094 seconds
-Tree Depth (Stage 2): 4
-Accuracy: 0.8750
-Precision: 0.9000
-Recall: 0.8750
-F1 Score: 0.8730
-F2 Score: 0.8709
-
-              precision    recall  f1-score   support
-
-           0     1.0000    0.7500    0.8571         8
-           1     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.8750        16
-   macro avg     0.9000    0.8750    0.8730        16
-weighted avg     0.9000    0.8750    0.8730        16
-
-Confusion Matrix:
-[[6 2]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9167
-Precision: 0.9333
-Recall: 0.9167
-F1 Score: 0.9153
-F2 Score: 0.9140
-
-              precision    recall  f1-score   support
-
-           0     1.0000    1.0000    1.0000         8
-           1     1.0000    0.7500    0.8571         8
-           2     0.8000    1.0000    0.8889         8
-
-    accuracy                         0.9167        24
-   macro avg     0.9333    0.9167    0.9153        24
-weighted avg     0.9333    0.9167    0.9153        24
-
-Confusion Matrix:
-[[8 0 0]
- [0 6 2]
- [0 0 8]]
-
------- Stage 2 with Random Forest (Gini) ------
-Training Time: 0.05441 seconds
-Random Forest Depths (Stage 2) -> Avg: 5.05, Max: 7, Min: 2
-Accuracy: 1.0000
-Precision: 1.0000
-Recall: 1.0000
-F1 Score: 1.0000
-F2 Score: 1.0000
-
-              precision    recall  f1-score   support
-
-           0     1.0000    1.0000    1.0000         8
-           1     1.0000    1.0000    1.0000         8
-
-    accuracy                         1.0000        16
-   macro avg     1.0000    1.0000    1.0000        16
-weighted avg     1.0000    1.0000    1.0000        16
-
-Confusion Matrix:
-[[8 0]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 1.0000
-Precision: 1.0000
-Recall: 1.0000
-F1 Score: 1.0000
-F2 Score: 1.0000
-
-              precision    recall  f1-score   support
-
-           0     1.0000    1.0000    1.0000         8
-           1     1.0000    1.0000    1.0000         8
-           2     1.0000    1.0000    1.0000         8
-
-    accuracy                         1.0000        24
-   macro avg     1.0000    1.0000    1.0000        24
-weighted avg     1.0000    1.0000    1.0000        24
-
-Confusion Matrix:
-[[8 0 0]
- [0 8 0]
- [0 0 8]]
-
------- Stage 2 with Naive Bayes ------
-Training Time: 0.00077 seconds
-Accuracy: 0.6250
-Precision: 0.6667
-Recall: 0.6250
-F1 Score: 0.6000
-F2 Score: 0.6061
-
-              precision    recall  f1-score   support
-
-           0     0.7500    0.3750    0.5000         8
-           1     0.5833    0.8750    0.7000         8
-
-    accuracy                         0.6250        16
-   macro avg     0.6667    0.6250    0.6000        16
-weighted avg     0.6667    0.6250    0.6000        16
+           0     1.0000    0.3750    0.5455         8
+           1     0.6154    1.0000    0.7619         8
+
+    accuracy                         0.6875        16
+   macro avg     0.8077    0.6875    0.6537        16
+weighted avg     0.8077    0.6875    0.6537        16
 
 Confusion Matrix:
 [[3 5]
- [1 7]]
+ [0 8]]
 
 Combined Classification Report:
-Accuracy: 0.7500
-Precision: 0.7778
-Recall: 0.7500
-F1 Score: 0.7333
-F2 Score: 0.7374
+Accuracy: 0.7083
+Precision: 0.7190
+Recall: 0.7083
+F1 Score: 0.6668
+F2 Score: 0.6832
 
               precision    recall  f1-score   support
 
-           0     1.0000    1.0000    1.0000         8
-           1     0.7500    0.3750    0.5000         8
-           2     0.5833    0.8750    0.7000         8
+           0     0.8750    0.8750    0.8750         8
+           1     0.6667    0.2500    0.3636         8
+           2     0.6154    1.0000    0.7619         8
 
-    accuracy                         0.7500        24
-   macro avg     0.7778    0.7500    0.7333        24
-weighted avg     0.7778    0.7500    0.7333        24
+    accuracy                         0.7083        24
+   macro avg     0.7190    0.7083    0.6668        24
+weighted avg     0.7190    0.7083    0.6668        24
 
 Confusion Matrix:
-[[8 0 0]
- [0 3 5]
- [0 1 7]]
+[[7 1 0]
+ [1 2 5]
+ [0 0 8]]
 
 ------ Stage 2 with KNN (k=5) ------
-Training Time: 0.00071 seconds
+Training Time: 0.00000 seconds
 Accuracy: 0.7500
 Precision: 0.7667
 Recall: 0.7500
@@ -1568,123 +162,1529 @@ F2 Score: 0.7456
 
               precision    recall  f1-score   support
 
-           0     0.8333    0.6250    0.7143         8
-           1     0.7000    0.8750    0.7778         8
+           0     0.7000    0.8750    0.7778         8
+           1     0.8333    0.6250    0.7143         8
 
     accuracy                         0.7500        16
    macro avg     0.7667    0.7500    0.7460        16
 weighted avg     0.7667    0.7500    0.7460        16
 
 Confusion Matrix:
-[[5 3]
+[[7 1]
+ [3 5]]
+
+Combined Classification Report:
+Accuracy: 0.7500
+Precision: 0.7694
+Recall: 0.7500
+F1 Score: 0.7520
+F2 Score: 0.7491
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.6000    0.7500    0.6667         8
+           2     0.8333    0.6250    0.7143         8
+
+    accuracy                         0.7500        24
+   macro avg     0.7694    0.7500    0.7520        24
+weighted avg     0.7694    0.7500    0.7520        24
+
+Confusion Matrix:
+[[7 1 0]
+ [1 6 1]
+ [0 3 5]]
+
+------ Stage 2 with Gradient Boosting ------
+Training Time: 0.04048 seconds
+Accuracy: 0.8750
+Precision: 0.8750
+Recall: 0.8750
+F1 Score: 0.8750
+F2 Score: 0.8750
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.8750        16
+   macro avg     0.8750    0.8750    0.8750        16
+weighted avg     0.8750    0.8750    0.8750        16
+
+Confusion Matrix:
+[[7 1]
  [1 7]]
 
 Combined Classification Report:
 Accuracy: 0.8333
-Precision: 0.8444
+Precision: 0.8333
 Recall: 0.8333
-F1 Score: 0.8307
-F2 Score: 0.8304
+F1 Score: 0.8333
+F2 Score: 0.8333
 
               precision    recall  f1-score   support
 
-           0     1.0000    1.0000    1.0000         8
-           1     0.8333    0.6250    0.7143         8
-           2     0.7000    0.8750    0.7778         8
+           0     0.8750    0.8750    0.8750         8
+           1     0.7500    0.7500    0.7500         8
+           2     0.8750    0.8750    0.8750         8
 
     accuracy                         0.8333        24
-   macro avg     0.8444    0.8333    0.8307        24
-weighted avg     0.8444    0.8333    0.8307        24
+   macro avg     0.8333    0.8333    0.8333        24
+weighted avg     0.8333    0.8333    0.8333        24
 
 Confusion Matrix:
-[[8 0 0]
+[[7 1 0]
+ [1 6 1]
+ [0 1 7]]
+
+------ Stage 2 with Logistic Regression ------
+Training Time: 0.00737 seconds
+Accuracy: 0.8125
+Precision: 0.8175
+Recall: 0.8125
+F1 Score: 0.8118
+F2 Score: 0.8114
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.8125        16
+   macro avg     0.8175    0.8125    0.8118        16
+weighted avg     0.8175    0.8125    0.8118        16
+
+Confusion Matrix:
+[[6 2]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7917
+Precision: 0.7890
+Recall: 0.7917
+F1 Score: 0.7884
+F2 Score: 0.7899
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.8750    0.8750         8
+           1     0.7143    0.6250    0.6667         8
+           2     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.7917        24
+   macro avg     0.7890    0.7917    0.7884        24
+weighted avg     0.7890    0.7917    0.7884        24
+
+Confusion Matrix:
+[[7 1 0]
+ [1 5 2]
+ [0 1 7]]
+
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 0.06267 seconds
+Random Forest Depths -> Avg: 3.89, Max: 7, Min: 2
+Accuracy: 0.9167
+Precision: 0.9259
+Recall: 0.9167
+F1 Score: 0.9132
+F2 Score: 0.9136
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.8889    1.0000    0.9412        16
+
+    accuracy                         0.9167        24
+   macro avg     0.9444    0.8750    0.8992        24
+weighted avg     0.9259    0.9167    0.9132        24
+
+Confusion Matrix:
+[[ 6  2]
+ [ 0 16]]
+
+------ Stage 2 with Decision Tree (Gini) ------
+Training Time: 0.00000 seconds
+Tree Depth (Stage 2): 4
+Accuracy: 0.6667
+Precision: 0.6833
+Recall: 0.6667
+F1 Score: 0.6667
+F2 Score: 0.6647
+
+              precision    recall  f1-score   support
+
+           0     0.7500    0.6000    0.6667        10
+           1     0.6000    0.7500    0.6667         8
+
+    accuracy                         0.6667        18
+   macro avg     0.6750    0.6750    0.6667        18
+weighted avg     0.6833    0.6667    0.6667        18
+
+Confusion Matrix:
+[[6 4]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7417
+Recall: 0.7083
+F1 Score: 0.7163
+F2 Score: 0.7096
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.6000    0.7500    0.6667         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7417    0.7083    0.7163        24
+weighted avg     0.7417    0.7083    0.7163        24
+
+Confusion Matrix:
+[[6 1 1]
+ [0 5 3]
+ [0 2 6]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05792 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.39, Max: 8, Min: 2
+Accuracy: 0.7222
+Precision: 0.7284
+Recall: 0.7222
+F1 Score: 0.7231
+F2 Score: 0.7220
+
+              precision    recall  f1-score   support
+
+           0     0.7778    0.7000    0.7368        10
+           1     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.7222        18
+   macro avg     0.7222    0.7250    0.7214        18
+weighted avg     0.7284    0.7222    0.7231        18
+
+Confusion Matrix:
+[[7 3]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7407
+Recall: 0.7083
+F1 Score: 0.7171
+F2 Score: 0.7103
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.5556    0.6250    0.5882         8
+           2     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7407    0.7083    0.7171        24
+weighted avg     0.7407    0.7083    0.7171        24
+
+Confusion Matrix:
+[[6 2 0]
+ [0 5 3]
+ [0 2 6]]
+
+------ Stage 2 with Naive Bayes ------
+Training Time: 0.00119 seconds
+Accuracy: 0.6667
+Precision: 0.8095
+Recall: 0.6667
+F1 Score: 0.6407
+F2 Score: 0.6390
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.4000    0.5714        10
+           1     0.5714    1.0000    0.7273         8
+
+    accuracy                         0.6667        18
+   macro avg     0.7857    0.7000    0.6494        18
+weighted avg     0.8095    0.6667    0.6407        18
+
+Confusion Matrix:
+[[4 6]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7738
+Recall: 0.7083
+F1 Score: 0.6948
+F2 Score: 0.6919
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.7500    0.3750    0.5000         8
+           2     0.5714    1.0000    0.7273         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7738    0.7083    0.6948        24
+weighted avg     0.7738    0.7083    0.6948        24
+
+Confusion Matrix:
+[[6 1 1]
+ [0 3 5]
+ [0 0 8]]
+
+------ Stage 2 with KNN (k=5) ------
+Training Time: 0.00000 seconds
+Accuracy: 0.7222
+Precision: 0.7215
+Recall: 0.7222
+F1 Score: 0.7196
+F2 Score: 0.7206
+
+              precision    recall  f1-score   support
+
+           0     0.7273    0.8000    0.7619        10
+           1     0.7143    0.6250    0.6667         8
+
+    accuracy                         0.7222        18
+   macro avg     0.7208    0.7125    0.7143        18
+weighted avg     0.7215    0.7222    0.7196        18
+
+Confusion Matrix:
+[[8 2]
+ [3 5]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7532
+Recall: 0.7083
+F1 Score: 0.7185
+F2 Score: 0.7094
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.5455    0.7500    0.6316         8
+           2     0.7143    0.6250    0.6667         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7532    0.7083    0.7185        24
+weighted avg     0.7532    0.7083    0.7185        24
+
+Confusion Matrix:
+[[6 2 0]
+ [0 6 2]
+ [0 3 5]]
+
+------ Stage 2 with Gradient Boosting ------
+Training Time: 0.03901 seconds
+Accuracy: 0.8333
+Precision: 0.8395
+Recall: 0.8333
+F1 Score: 0.8338
+F2 Score: 0.8329
+
+              precision    recall  f1-score   support
+
+           0     0.8889    0.8000    0.8421        10
+           1     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.8333        18
+   macro avg     0.8333    0.8375    0.8328        18
+weighted avg     0.8395    0.8333    0.8338        18
+
+Confusion Matrix:
+[[8 2]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7917
+Precision: 0.8148
+Recall: 0.7917
+F1 Score: 0.7955
+F2 Score: 0.7916
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.6667    0.7500    0.7059         8
+           2     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.7917        24
+   macro avg     0.8148    0.7917    0.7955        24
+weighted avg     0.8148    0.7917    0.7955        24
+
+Confusion Matrix:
+[[6 2 0]
+ [0 6 2]
+ [0 1 7]]
+
+------ Stage 2 with Logistic Regression ------
+Training Time: 0.00992 seconds
+Accuracy: 0.7778
+Precision: 0.7972
+Recall: 0.7778
+F1 Score: 0.7778
+F2 Score: 0.7755
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.7000    0.7778        10
+           1     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7778        18
+   macro avg     0.7875    0.7875    0.7778        18
+weighted avg     0.7972    0.7778    0.7778        18
+
+Confusion Matrix:
+[[7 3]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7500
+Precision: 0.7750
+Recall: 0.7500
+F1 Score: 0.7533
+F2 Score: 0.7493
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.7500    0.8571         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7500        24
+   macro avg     0.7750    0.7500    0.7533        24
+weighted avg     0.7750    0.7500    0.7533        24
+
+Confusion Matrix:
+[[6 2 0]
  [0 5 3]
  [0 1 7]]
 
+--- Stage 1 with Naive Bayes ---
+Training Time: 0.00130 seconds
+Accuracy: 0.7917
+Precision: 0.7871
+Recall: 0.7917
+F1 Score: 0.7879
+F2 Score: 0.7898
+
+              precision    recall  f1-score   support
+
+           0     0.7143    0.6250    0.6667         8
+           1     0.8235    0.8750    0.8485        16
+
+    accuracy                         0.7917        24
+   macro avg     0.7689    0.7500    0.7576        24
+weighted avg     0.7871    0.7917    0.7879        24
+
+Confusion Matrix:
+[[ 5  3]
+ [ 2 14]]
+
+------ Stage 2 with Decision Tree (Gini) ------
+Training Time: 0.00000 seconds
+Tree Depth (Stage 2): 4
+Accuracy: 0.7647
+Precision: 0.7647
+Recall: 0.7647
+F1 Score: 0.7647
+F2 Score: 0.7647
+
+              precision    recall  f1-score   support
+
+           0     0.7778    0.7778    0.7778         9
+           1     0.7500    0.7500    0.7500         8
+
+    accuracy                         0.7647        17
+   macro avg     0.7639    0.7639    0.7639        17
+weighted avg     0.7647    0.7647    0.7647        17
+
+Confusion Matrix:
+[[7 2]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.6250
+Precision: 0.6362
+Recall: 0.6250
+F1 Score: 0.6291
+F2 Score: 0.6263
+
+              precision    recall  f1-score   support
+
+           0     0.7143    0.6250    0.6667         8
+           1     0.4444    0.5000    0.4706         8
+           2     0.7500    0.7500    0.7500         8
+
+    accuracy                         0.6250        24
+   macro avg     0.6362    0.6250    0.6291        24
+weighted avg     0.6362    0.6250    0.6291        24
+
+Confusion Matrix:
+[[5 3 0]
+ [2 4 2]
+ [0 2 6]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05850 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.39, Max: 8, Min: 2
+Accuracy: 0.8235
+Precision: 0.8269
+Recall: 0.8235
+F1 Score: 0.8223
+F2 Score: 0.8223
+
+              precision    recall  f1-score   support
+
+           0     0.8000    0.8889    0.8421         9
+           1     0.8571    0.7500    0.8000         8
+
+    accuracy                         0.8235        17
+   macro avg     0.8286    0.8194    0.8211        17
+weighted avg     0.8269    0.8235    0.8223        17
+
+Confusion Matrix:
+[[8 1]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.6667
+Precision: 0.6905
+Recall: 0.6667
+F1 Score: 0.6741
+F2 Score: 0.6685
+
+              precision    recall  f1-score   support
+
+           0     0.7143    0.6250    0.6667         8
+           1     0.5000    0.6250    0.5556         8
+           2     0.8571    0.7500    0.8000         8
+
+    accuracy                         0.6667        24
+   macro avg     0.6905    0.6667    0.6741        24
+weighted avg     0.6905    0.6667    0.6741        24
+
+Confusion Matrix:
+[[5 3 0]
+ [2 5 1]
+ [0 2 6]]
+
+------ Stage 2 with Naive Bayes ------
+Training Time: 0.00000 seconds
+Accuracy: 0.7647
+Precision: 0.8431
+Recall: 0.7647
+F1 Score: 0.7546
+F2 Score: 0.7506
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.5556    0.7143         9
+           1     0.6667    1.0000    0.8000         8
+
+    accuracy                         0.7647        17
+   macro avg     0.8333    0.7778    0.7571        17
+weighted avg     0.8431    0.7647    0.7546        17
+
+Confusion Matrix:
+[[5 4]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.6250
+Precision: 0.5937
+Recall: 0.6250
+F1 Score: 0.5915
+F2 Score: 0.6068
+
+              precision    recall  f1-score   support
+
+           0     0.7143    0.6250    0.6667         8
+           1     0.4000    0.2500    0.3077         8
+           2     0.6667    1.0000    0.8000         8
+
+    accuracy                         0.6250        24
+   macro avg     0.5937    0.6250    0.5915        24
+weighted avg     0.5937    0.6250    0.5915        24
+
+Confusion Matrix:
+[[5 3 0]
+ [2 2 4]
+ [0 0 8]]
+
+------ Stage 2 with KNN (k=5) ------
+Training Time: 0.00285 seconds
+Accuracy: 0.8235
+Precision: 0.8676
+Recall: 0.8235
+F1 Score: 0.8158
+F2 Score: 0.8143
+
+              precision    recall  f1-score   support
+
+           0     0.7500    1.0000    0.8571         9
+           1     1.0000    0.6250    0.7692         8
+
+    accuracy                         0.8235        17
+   macro avg     0.8750    0.8125    0.8132        17
+weighted avg     0.8676    0.8235    0.8158        17
+
+Confusion Matrix:
+[[9 0]
+ [3 5]]
+
+Combined Classification Report:
+Accuracy: 0.6667
+Precision: 0.7381
+Recall: 0.6667
+F1 Score: 0.6786
+F2 Score: 0.6662
+
+              precision    recall  f1-score   support
+
+           0     0.7143    0.6250    0.6667         8
+           1     0.5000    0.7500    0.6000         8
+           2     1.0000    0.6250    0.7692         8
+
+    accuracy                         0.6667        24
+   macro avg     0.7381    0.6667    0.6786        24
+weighted avg     0.7381    0.6667    0.6786        24
+
+Confusion Matrix:
+[[5 3 0]
+ [2 6 0]
+ [0 3 5]]
+
 ------ Stage 2 with Gradient Boosting ------
-Training Time: 0.03832 seconds
-Accuracy: 0.9375
-Precision: 0.9444
-Recall: 0.9375
-F1 Score: 0.9373
-F2 Score: 0.9365
+Training Time: 0.04001 seconds
+Accuracy: 0.8824
+Precision: 0.8824
+Recall: 0.8824
+F1 Score: 0.8824
+F2 Score: 0.8824
+
+              precision    recall  f1-score   support
+
+           0     0.8889    0.8889    0.8889         9
+           1     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.8824        17
+   macro avg     0.8819    0.8819    0.8819        17
+weighted avg     0.8824    0.8824    0.8824        17
+
+Confusion Matrix:
+[[8 1]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7149
+Recall: 0.7083
+F1 Score: 0.7100
+F2 Score: 0.7086
+
+              precision    recall  f1-score   support
+
+           0     0.7143    0.6250    0.6667         8
+           1     0.5556    0.6250    0.5882         8
+           2     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7149    0.7083    0.7100        24
+weighted avg     0.7149    0.7083    0.7100        24
+
+Confusion Matrix:
+[[5 3 0]
+ [2 5 1]
+ [0 1 7]]
+
+------ Stage 2 with Logistic Regression ------
+Training Time: 0.00507 seconds
+Accuracy: 0.8824
+Precision: 0.8824
+Recall: 0.8824
+F1 Score: 0.8824
+F2 Score: 0.8824
+
+              precision    recall  f1-score   support
+
+           0     0.8889    0.8889    0.8889         9
+           1     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.8824        17
+   macro avg     0.8819    0.8819    0.8819        17
+weighted avg     0.8824    0.8824    0.8824        17
+
+Confusion Matrix:
+[[8 1]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7149
+Recall: 0.7083
+F1 Score: 0.7100
+F2 Score: 0.7086
+
+              precision    recall  f1-score   support
+
+           0     0.7143    0.6250    0.6667         8
+           1     0.5556    0.6250    0.5882         8
+           2     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7149    0.7083    0.7100        24
+weighted avg     0.7149    0.7083    0.7100        24
+
+Confusion Matrix:
+[[5 3 0]
+ [2 5 1]
+ [0 1 7]]
+
+--- Stage 1 with KNN (k=5) ---
+Training Time: 0.00000 seconds
+Accuracy: 0.8333
+Precision: 0.8333
+Recall: 0.8333
+F1 Score: 0.8263
+F2 Score: 0.8291
+
+              precision    recall  f1-score   support
+
+           0     0.8333    0.6250    0.7143         8
+           1     0.8333    0.9375    0.8824        16
+
+    accuracy                         0.8333        24
+   macro avg     0.8333    0.7812    0.7983        24
+weighted avg     0.8333    0.8333    0.8263        24
+
+Confusion Matrix:
+[[ 5  3]
+ [ 1 15]]
+
+------ Stage 2 with Decision Tree (Gini) ------
+Training Time: 0.00154 seconds
+Tree Depth (Stage 2): 4
+Accuracy: 0.6667
+Precision: 0.6833
+Recall: 0.6667
+F1 Score: 0.6667
+F2 Score: 0.6647
+
+              precision    recall  f1-score   support
+
+           0     0.7500    0.6000    0.6667        10
+           1     0.6000    0.7500    0.6667         8
+
+    accuracy                         0.6667        18
+   macro avg     0.6750    0.6750    0.6667        18
+weighted avg     0.6833    0.6667    0.6667        18
+
+Confusion Matrix:
+[[6 4]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.6250
+Precision: 0.6444
+Recall: 0.6250
+F1 Score: 0.6270
+F2 Score: 0.6241
+
+              precision    recall  f1-score   support
+
+           0     0.8333    0.6250    0.7143         8
+           1     0.5000    0.5000    0.5000         8
+           2     0.6000    0.7500    0.6667         8
+
+    accuracy                         0.6250        24
+   macro avg     0.6444    0.6250    0.6270        24
+weighted avg     0.6444    0.6250    0.6270        24
+
+Confusion Matrix:
+[[5 2 1]
+ [1 4 3]
+ [0 2 6]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05667 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.39, Max: 8, Min: 2
+Accuracy: 0.7222
+Precision: 0.7284
+Recall: 0.7222
+F1 Score: 0.7231
+F2 Score: 0.7220
+
+              precision    recall  f1-score   support
+
+           0     0.7778    0.7000    0.7368        10
+           1     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.7222        18
+   macro avg     0.7222    0.7250    0.7214        18
+weighted avg     0.7284    0.7222    0.7231        18
+
+Confusion Matrix:
+[[7 3]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.6250
+Precision: 0.6481
+Recall: 0.6250
+F1 Score: 0.6303
+F2 Score: 0.6258
+
+              precision    recall  f1-score   support
+
+           0     0.8333    0.6250    0.7143         8
+           1     0.4444    0.5000    0.4706         8
+           2     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.6250        24
+   macro avg     0.6481    0.6250    0.6303        24
+weighted avg     0.6481    0.6250    0.6303        24
+
+Confusion Matrix:
+[[5 3 0]
+ [1 4 3]
+ [0 2 6]]
+
+------ Stage 2 with Naive Bayes ------
+Training Time: 0.00201 seconds
+Accuracy: 0.6111
+Precision: 0.7926
+Recall: 0.6111
+F1 Score: 0.5656
+F2 Score: 0.5720
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.3000    0.4615        10
+           1     0.5333    1.0000    0.6957         8
+
+    accuracy                         0.6111        18
+   macro avg     0.7667    0.6500    0.5786        18
+weighted avg     0.7926    0.6111    0.5656        18
+
+Confusion Matrix:
+[[3 7]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.6250
+Precision: 0.6778
+Recall: 0.6250
+F1 Score: 0.5912
+F2 Score: 0.5982
+
+              precision    recall  f1-score   support
+
+           0     0.8333    0.6250    0.7143         8
+           1     0.6667    0.2500    0.3636         8
+           2     0.5333    1.0000    0.6957         8
+
+    accuracy                         0.6250        24
+   macro avg     0.6778    0.6250    0.5912        24
+weighted avg     0.6778    0.6250    0.5912        24
+
+Confusion Matrix:
+[[5 1 2]
+ [1 2 5]
+ [0 0 8]]
+
+------ Stage 2 with KNN (k=5) ------
+Training Time: 0.00201 seconds
+Accuracy: 0.7222
+Precision: 0.7215
+Recall: 0.7222
+F1 Score: 0.7196
+F2 Score: 0.7206
+
+              precision    recall  f1-score   support
+
+           0     0.7273    0.8000    0.7619        10
+           1     0.7143    0.6250    0.6667         8
+
+    accuracy                         0.7222        18
+   macro avg     0.7208    0.7125    0.7143        18
+weighted avg     0.7215    0.7222    0.7196        18
+
+Confusion Matrix:
+[[8 2]
+ [3 5]]
+
+Combined Classification Report:
+Accuracy: 0.6250
+Precision: 0.6674
+Recall: 0.6250
+F1 Score: 0.6358
+F2 Score: 0.6268
+
+              precision    recall  f1-score   support
+
+           0     0.8333    0.6250    0.7143         8
+           1     0.4545    0.6250    0.5263         8
+           2     0.7143    0.6250    0.6667         8
+
+    accuracy                         0.6250        24
+   macro avg     0.6674    0.6250    0.6358        24
+weighted avg     0.6674    0.6250    0.6358        24
+
+Confusion Matrix:
+[[5 3 0]
+ [1 5 2]
+ [0 3 5]]
+
+------ Stage 2 with Gradient Boosting ------
+Training Time: 0.04177 seconds
+Accuracy: 0.7778
+Precision: 0.7972
+Recall: 0.7778
+F1 Score: 0.7778
+F2 Score: 0.7755
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.7000    0.7778        10
+           1     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7778        18
+   macro avg     0.7875    0.7875    0.7778        18
+weighted avg     0.7972    0.7778    0.7778        18
+
+Confusion Matrix:
+[[7 3]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7194
+Recall: 0.7083
+F1 Score: 0.7057
+F2 Score: 0.7054
+
+              precision    recall  f1-score   support
+
+           0     0.8333    0.6250    0.7143         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7194    0.7083    0.7057        24
+weighted avg     0.7194    0.7083    0.7057        24
+
+Confusion Matrix:
+[[5 2 1]
+ [1 5 2]
+ [0 1 7]]
+
+------ Stage 2 with Logistic Regression ------
+Training Time: 0.00000 seconds
+Accuracy: 0.7778
+Precision: 0.7972
+Recall: 0.7778
+F1 Score: 0.7778
+F2 Score: 0.7755
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.7000    0.7778        10
+           1     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7778        18
+   macro avg     0.7875    0.7875    0.7778        18
+weighted avg     0.7972    0.7778    0.7778        18
+
+Confusion Matrix:
+[[7 3]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.6667
+Precision: 0.6778
+Recall: 0.6667
+F1 Score: 0.6640
+F2 Score: 0.6637
+
+              precision    recall  f1-score   support
+
+           0     0.8333    0.6250    0.7143         8
+           1     0.5000    0.5000    0.5000         8
+           2     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.6667        24
+   macro avg     0.6778    0.6667    0.6640        24
+weighted avg     0.6778    0.6667    0.6640        24
+
+Confusion Matrix:
+[[5 3 0]
+ [1 4 3]
+ [0 1 7]]
+
+--- Stage 1 with Gradient Boosting ---
+Training Time: 0.03612 seconds
+Accuracy: 0.9583
+Precision: 0.9608
+Recall: 0.9583
+F1 Score: 0.9576
+F2 Score: 0.9576
 
               precision    recall  f1-score   support
 
            0     1.0000    0.8750    0.9333         8
-           1     0.8889    1.0000    0.9412         8
-
-    accuracy                         0.9375        16
-   macro avg     0.9444    0.9375    0.9373        16
-weighted avg     0.9444    0.9375    0.9373        16
-
-Confusion Matrix:
-[[7 1]
- [0 8]]
-
-Combined Classification Report:
-Accuracy: 0.9583
-Precision: 0.9630
-Recall: 0.9583
-F1 Score: 0.9582
-F2 Score: 0.9577
-
-              precision    recall  f1-score   support
-
-           0     1.0000    1.0000    1.0000         8
-           1     1.0000    0.8750    0.9333         8
-           2     0.8889    1.0000    0.9412         8
+           1     0.9412    1.0000    0.9697        16
 
     accuracy                         0.9583        24
-   macro avg     0.9630    0.9583    0.9582        24
-weighted avg     0.9630    0.9583    0.9582        24
+   macro avg     0.9706    0.9375    0.9515        24
+weighted avg     0.9608    0.9583    0.9576        24
 
 Confusion Matrix:
-[[8 0 0]
- [0 7 1]
- [0 0 8]]
+[[ 7  1]
+ [ 0 16]]
 
------- Stage 2 with Logistic Regression ------
-Training Time: 0.01120 seconds
-Accuracy: 0.8125
-Precision: 0.8636
-Recall: 0.8125
-F1 Score: 0.8057
-F2 Score: 0.8030
+------ Stage 2 with Decision Tree (Gini) ------
+Training Time: 0.00000 seconds
+Tree Depth (Stage 2): 4
+Accuracy: 0.7059
+Precision: 0.7108
+Recall: 0.7059
+F1 Score: 0.7059
+F2 Score: 0.7053
 
               precision    recall  f1-score   support
 
-           0     1.0000    0.6250    0.7692         8
-           1     0.7273    1.0000    0.8421         8
+           0     0.7500    0.6667    0.7059         9
+           1     0.6667    0.7500    0.7059         8
 
-    accuracy                         0.8125        16
-   macro avg     0.8636    0.8125    0.8057        16
-weighted avg     0.8636    0.8125    0.8057        16
+    accuracy                         0.7059        17
+   macro avg     0.7083    0.7083    0.7059        17
+weighted avg     0.7108    0.7059    0.7059        17
 
 Confusion Matrix:
-[[5 3]
+[[6 3]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.7500
+Precision: 0.7639
+Recall: 0.7500
+F1 Score: 0.7547
+F2 Score: 0.7514
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.7500        24
+   macro avg     0.7639    0.7500    0.7547        24
+weighted avg     0.7639    0.7500    0.7547        24
+
+Confusion Matrix:
+[[7 1 0]
+ [0 5 3]
+ [0 2 6]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.05035 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.39, Max: 8, Min: 2
+Accuracy: 0.7059
+Precision: 0.7108
+Recall: 0.7059
+F1 Score: 0.7059
+F2 Score: 0.7053
+
+              precision    recall  f1-score   support
+
+           0     0.7500    0.6667    0.7059         9
+           1     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.7059        17
+   macro avg     0.7083    0.7083    0.7059        17
+weighted avg     0.7108    0.7059    0.7059        17
+
+Confusion Matrix:
+[[6 3]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.7500
+Precision: 0.7639
+Recall: 0.7500
+F1 Score: 0.7547
+F2 Score: 0.7514
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.7500        24
+   macro avg     0.7639    0.7500    0.7547        24
+weighted avg     0.7639    0.7500    0.7547        24
+
+Confusion Matrix:
+[[7 1 0]
+ [0 5 3]
+ [0 2 6]]
+
+------ Stage 2 with Naive Bayes ------
+Training Time: 0.00000 seconds
+Accuracy: 0.7059
+Precision: 0.8190
+Recall: 0.7059
+F1 Score: 0.6843
+F2 Score: 0.6830
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.4444    0.6154         9
+           1     0.6154    1.0000    0.7619         8
+
+    accuracy                         0.7059        17
+   macro avg     0.8077    0.7222    0.6886        17
+weighted avg     0.8190    0.7059    0.6843        17
+
+Confusion Matrix:
+[[4 5]
  [0 8]]
 
 Combined Classification Report:
-Accuracy: 0.8750
-Precision: 0.9091
-Recall: 0.8750
-F1 Score: 0.8704
-F2 Score: 0.8686
+Accuracy: 0.7500
+Precision: 0.7885
+Recall: 0.7500
+F1 Score: 0.7317
+F2 Score: 0.7343
 
               precision    recall  f1-score   support
 
-           0     1.0000    1.0000    1.0000         8
-           1     1.0000    0.6250    0.7692         8
-           2     0.7273    1.0000    0.8421         8
+           0     1.0000    0.8750    0.9333         8
+           1     0.7500    0.3750    0.5000         8
+           2     0.6154    1.0000    0.7619         8
 
-    accuracy                         0.8750        24
-   macro avg     0.9091    0.8750    0.8704        24
-weighted avg     0.9091    0.8750    0.8704        24
+    accuracy                         0.7500        24
+   macro avg     0.7885    0.7500    0.7317        24
+weighted avg     0.7885    0.7500    0.7317        24
 
 Confusion Matrix:
-[[8 0 0]
- [0 5 3]
+[[7 1 0]
+ [0 3 5]
  [0 0 8]]
+
+------ Stage 2 with KNN (k=5) ------
+Training Time: 0.00000 seconds
+Accuracy: 0.7059
+Precision: 0.7067
+Recall: 0.7059
+F1 Score: 0.7038
+F2 Score: 0.7045
+
+              precision    recall  f1-score   support
+
+           0     0.7000    0.7778    0.7368         9
+           1     0.7143    0.6250    0.6667         8
+
+    accuracy                         0.7059        17
+   macro avg     0.7071    0.7014    0.7018        17
+weighted avg     0.7067    0.7059    0.7038        17
+
+Confusion Matrix:
+[[7 2]
+ [3 5]]
+
+Combined Classification Report:
+Accuracy: 0.7500
+Precision: 0.7714
+Recall: 0.7500
+F1 Score: 0.7556
+F2 Score: 0.7509
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.6000    0.7500    0.6667         8
+           2     0.7143    0.6250    0.6667         8
+
+    accuracy                         0.7500        24
+   macro avg     0.7714    0.7500    0.7556        24
+weighted avg     0.7714    0.7500    0.7556        24
+
+Confusion Matrix:
+[[7 1 0]
+ [0 6 2]
+ [0 3 5]]
+
+------ Stage 2 with Gradient Boosting ------
+Training Time: 0.04140 seconds
+Accuracy: 0.8235
+Precision: 0.8292
+Recall: 0.8235
+F1 Score: 0.8235
+F2 Score: 0.8228
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.7778    0.8235         9
+           1     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.8235        17
+   macro avg     0.8264    0.8264    0.8235        17
+weighted avg     0.8292    0.8235    0.8235        17
+
+Confusion Matrix:
+[[7 2]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.8333
+Precision: 0.8426
+Recall: 0.8333
+F1 Score: 0.8356
+F2 Score: 0.8337
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.7500    0.7500    0.7500         8
+           2     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.8333        24
+   macro avg     0.8426    0.8333    0.8356        24
+weighted avg     0.8426    0.8333    0.8356        24
+
+Confusion Matrix:
+[[7 1 0]
+ [0 6 2]
+ [0 1 7]]
+
+------ Stage 2 with Logistic Regression ------
+Training Time: 0.00551 seconds
+Accuracy: 0.7647
+Precision: 0.7832
+Recall: 0.7647
+F1 Score: 0.7631
+F2 Score: 0.7615
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.6667    0.7500         9
+           1     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7647        17
+   macro avg     0.7786    0.7708    0.7639        17
+weighted avg     0.7832    0.7647    0.7631        17
+
+Confusion Matrix:
+[[6 3]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7917
+Precision: 0.8048
+Recall: 0.7917
+F1 Score: 0.7926
+F2 Score: 0.7906
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8750    0.9333         8
+           1     0.7143    0.6250    0.6667         8
+           2     0.7000    0.8750    0.7778         8
+
+    accuracy                         0.7917        24
+   macro avg     0.8048    0.7917    0.7926        24
+weighted avg     0.8048    0.7917    0.7926        24
+
+Confusion Matrix:
+[[7 1 0]
+ [0 5 3]
+ [0 1 7]]
+
+--- Stage 1 with Logistic Regression ---
+Training Time: 0.01021 seconds
+Accuracy: 0.8750
+Precision: 0.8739
+Recall: 0.8750
+F1 Score: 0.8727
+F2 Score: 0.8737
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.8824    0.9375    0.9091        16
+
+    accuracy                         0.8750        24
+   macro avg     0.8697    0.8438    0.8545        24
+weighted avg     0.8739    0.8750    0.8727        24
+
+Confusion Matrix:
+[[ 6  2]
+ [ 1 15]]
+
+------ Stage 2 with Decision Tree (Gini) ------
+Training Time: 0.00000 seconds
+Tree Depth (Stage 2): 4
+Accuracy: 0.7059
+Precision: 0.7108
+Recall: 0.7059
+F1 Score: 0.7059
+F2 Score: 0.7053
+
+              precision    recall  f1-score   support
+
+           0     0.7500    0.6667    0.7059         9
+           1     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.7059        17
+   macro avg     0.7083    0.7083    0.7059        17
+weighted avg     0.7108    0.7059    0.7059        17
+
+Confusion Matrix:
+[[6 3]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7163
+Recall: 0.7083
+F1 Score: 0.7103
+F2 Score: 0.7086
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.6667    0.7500    0.7059         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7163    0.7083    0.7103        24
+weighted avg     0.7163    0.7083    0.7103        24
+
+Confusion Matrix:
+[[6 1 1]
+ [1 5 2]
+ [0 2 6]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 0.06019 seconds
+Random Forest Depths (Stage 2) -> Avg: 4.39, Max: 8, Min: 2
+Accuracy: 0.7647
+Precision: 0.7647
+Recall: 0.7647
+F1 Score: 0.7647
+F2 Score: 0.7647
+
+              precision    recall  f1-score   support
+
+           0     0.7778    0.7778    0.7778         9
+           1     0.7500    0.7500    0.7500         8
+
+    accuracy                         0.7647        17
+   macro avg     0.7639    0.7639    0.7639        17
+weighted avg     0.7647    0.7647    0.7647        17
+
+Confusion Matrix:
+[[7 2]
+ [2 6]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7209
+Recall: 0.7083
+F1 Score: 0.7127
+F2 Score: 0.7097
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.5556    0.6250    0.5882         8
+           2     0.7500    0.7500    0.7500         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7209    0.7083    0.7127        24
+weighted avg     0.7209    0.7083    0.7127        24
+
+Confusion Matrix:
+[[6 2 0]
+ [1 5 2]
+ [0 2 6]]
+
+------ Stage 2 with Naive Bayes ------
+Training Time: 0.00134 seconds
+Accuracy: 0.6471
+Precision: 0.7983
+Recall: 0.6471
+F1 Score: 0.6070
+F2 Score: 0.6128
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.3333    0.5000         9
+           1     0.5714    1.0000    0.7273         8
+
+    accuracy                         0.6471        17
+   macro avg     0.7857    0.6667    0.6136        17
+weighted avg     0.7983    0.6471    0.6070        17
+
+Confusion Matrix:
+[[3 6]
+ [0 8]]
+
+Combined Classification Report:
+Accuracy: 0.6667
+Precision: 0.6984
+Recall: 0.6667
+F1 Score: 0.6303
+F2 Score: 0.6415
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.6667    0.2500    0.3636         8
+           2     0.5714    1.0000    0.7273         8
+
+    accuracy                         0.6667        24
+   macro avg     0.6984    0.6667    0.6303        24
+weighted avg     0.6984    0.6667    0.6303        24
+
+Confusion Matrix:
+[[6 1 1]
+ [1 2 5]
+ [0 0 8]]
+
+------ Stage 2 with KNN (k=5) ------
+Training Time: 0.00000 seconds
+Accuracy: 0.7647
+Precision: 0.7772
+Recall: 0.7647
+F1 Score: 0.7597
+F2 Score: 0.7602
+
+              precision    recall  f1-score   support
+
+           0     0.7273    0.8889    0.8000         9
+           1     0.8333    0.6250    0.7143         8
+
+    accuracy                         0.7647        17
+   macro avg     0.7803    0.7569    0.7571        17
+weighted avg     0.7772    0.7647    0.7597        17
+
+Confusion Matrix:
+[[8 1]
+ [3 5]]
+
+Combined Classification Report:
+Accuracy: 0.7083
+Precision: 0.7453
+Recall: 0.7083
+F1 Score: 0.7153
+F2 Score: 0.7083
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.5455    0.7500    0.6316         8
+           2     0.8333    0.6250    0.7143         8
+
+    accuracy                         0.7083        24
+   macro avg     0.7453    0.7083    0.7153        24
+weighted avg     0.7453    0.7083    0.7153        24
+
+Confusion Matrix:
+[[6 2 0]
+ [1 6 1]
+ [0 3 5]]
+
+------ Stage 2 with Gradient Boosting ------
+Training Time: 0.04015 seconds
+Accuracy: 0.8824
+Precision: 0.8824
+Recall: 0.8824
+F1 Score: 0.8824
+F2 Score: 0.8824
+
+              precision    recall  f1-score   support
+
+           0     0.8889    0.8889    0.8889         9
+           1     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.8824        17
+   macro avg     0.8819    0.8819    0.8819        17
+weighted avg     0.8824    0.8824    0.8824        17
+
+Confusion Matrix:
+[[8 1]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7917
+Precision: 0.7996
+Recall: 0.7917
+F1 Score: 0.7936
+F2 Score: 0.7920
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.6667    0.7500    0.7059         8
+           2     0.8750    0.8750    0.8750         8
+
+    accuracy                         0.7917        24
+   macro avg     0.7996    0.7917    0.7936        24
+weighted avg     0.7996    0.7917    0.7936        24
+
+Confusion Matrix:
+[[6 2 0]
+ [1 6 1]
+ [0 1 7]]
+
+------ Stage 2 with Logistic Regression ------
+Training Time: 0.00542 seconds
+Accuracy: 0.8235
+Precision: 0.8292
+Recall: 0.8235
+F1 Score: 0.8235
+F2 Score: 0.8228
+
+              precision    recall  f1-score   support
+
+           0     0.8750    0.7778    0.8235         9
+           1     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.8235        17
+   macro avg     0.8264    0.8264    0.8235        17
+weighted avg     0.8292    0.8235    0.8235        17
+
+Confusion Matrix:
+[[7 2]
+ [1 7]]
+
+Combined Classification Report:
+Accuracy: 0.7500
+Precision: 0.7533
+Recall: 0.7500
+F1 Score: 0.7495
+F2 Score: 0.7493
+
+              precision    recall  f1-score   support
+
+           0     0.8571    0.7500    0.8000         8
+           1     0.6250    0.6250    0.6250         8
+           2     0.7778    0.8750    0.8235         8
+
+    accuracy                         0.7500        24
+   macro avg     0.7533    0.7500    0.7495        24
+weighted avg     0.7533    0.7500    0.7495        24
+
+Confusion Matrix:
+[[6 2 0]
+ [1 5 2]
+ [0 1 7]]
 
 All loops completed.

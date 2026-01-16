@@ -42,7 +42,7 @@ selected_feature_cols = [
     # 'rsvp'       # 28
 ]
 
-train_file_paths = ['combined_train.csv']
+train_file_paths = ['Datasets/combined_train.csv']
 test_file_paths = [
     'Datasets/CTU-13/final_dataset/test_1.csv',
     'Datasets/CTU-13/final_dataset/test_2.csv',
